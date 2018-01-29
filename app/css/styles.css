@@ -261,6 +261,15 @@ body {
     box-sizing: border-box;
     box-sizing: border-box; }
 
+#uranus .ring {
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  border: 0.3em solid rgba(104, 168, 241, 0.7);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
 /* --------------------------------------------------------------------------- planets index */
 #mercury {
   z-index: 10; }
@@ -406,11 +415,11 @@ body {
 #saturn .pos, #saturn .planet, #saturn.orbit, #saturn .ring {
   animation-duration: 353.36998s; }
 
-#uranus .pos, #uranus .planet, #uranus.orbit {
-  animation-duration: 1008.20215s; }
+#uranus .pos, #uranus .planet, #uranus.orbit, #uranus .ring {
+  animation-duration: 108.20215s; }
 
 #neptune .pos, #neptune .planet, #neptune.orbit {
-  animation-duration: 1977.49584s; }
+  animation-duration: 877.49584s; }
 
 /* --------------------------------------------------------------------------- stretched sizes */
 .scale-stretched #sun {
