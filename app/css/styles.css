@@ -1606,7 +1606,7 @@ a {
   padding-right: 4em;
   padding-top: 8em;
   padding-left: 5em !important;
-  right: -7.5em;
+  right: -3.5em;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -2462,9 +2462,6 @@ section {
 section {
   background-color: #333333; }
 
-#universe {
-  background-color: #334444; }
-
 #sun {
   background-image: url("../../images/planeten/sonne.png"); }
 
@@ -2562,6 +2559,11 @@ body {
   font-family: Roboto; }
   body h1 {
     color: #c0b2ee;
-    font-family: Astrolytt; }
+    font-family: Astrolytt;
+    top: 3.125em !important;
+    height: 100%;
+    padding-top: 0.7em;
+    /*padding-left: 1.4em;*/
+    text-align: center; }
   body p {
     color: #333333; }
