@@ -77,6 +77,11 @@
             </div>
             
           </div>
+            <section>
+                <label class="set_state">
+                  <input type="checkbox">
+                </label>
+            </section>
         </div>
       </div>
     </section>
@@ -98,6 +103,8 @@
       var init = function() {
         body.addClass("view-3D")
       };
+        
+      $(".set_state").click(function() { body.toggleClass("pause_anim"); });
 
       init();
 

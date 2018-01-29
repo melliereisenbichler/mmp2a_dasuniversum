@@ -1,0 +1,16 @@
+#slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #slider {
+    width: 50em;
+    height: 0.5em;
+    margin-top: 8em;
+    text-align: center;
+    line-height: 1.2em;
+  }
+  
+  .ui-slider .ui-slider-handle {
+    width: 30px;
+  }
