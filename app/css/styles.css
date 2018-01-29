@@ -1,2 +1,20 @@
-body h1 {
-  color: coral; }
+/* --- STYLE BASICS --- */
+/* --- STYLE VARIABLES --- */
+@font-face {
+  font-family: "ASTROLYTT";
+  src: url("../fonts/astrolyt.ttf") format("truetype"); }
+
+/* to set margin & padding for the entire page to 0
+* {
+    margin: 0;
+    padding: 0;
+
+}
+*/
+body {
+  font-family: Roboto; }
+  body h1 {
+    color: #c0b2ee;
+    font-family: Astrolytt; }
+  body p {
+    color: #333333; }
