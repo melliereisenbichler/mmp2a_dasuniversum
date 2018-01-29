@@ -308,44 +308,13 @@ body {
   }
 }
 
-/* --------------------------------------------------------------------------- close zoom */
+/* --------------------------------------------------------------------------- pause */
 
-.zoom-close {
-  #solar-system {
-    width: 200%;
-    font-size: 100%;
-  }
-  .scale-stretched #solar-system {
-    margin-left: -100%;
-  }
-  .scale-d #solar-system {
-    margin-left: -106%;
-  }
-  &.view-3D .scale-d #solar-system {
-    font-size: 84%;
-  }
-  .scale-s #solar-system {
-    margin-left: -145%;
-  }
-  &.view-3D .scale-s #solar-system {
-    font-size: 40%;
-  }
+.pause_anim {
   .orbit, .pos, .planet, .satelite, .ring {
     animation-play-state: paused !important;
     animation-duration: 0s !important;
     animation: none !important;
-  }
-  &.view-3D {
-    .planet {
-      transform: rotateX(-90deg);
-    }
-    .moon {
-      transform: rotateX(90deg);
-    }
-  }
-  .pos {
-    left: 100% !important;
-    top: 50% !important;
   }
 }
 
@@ -1199,6 +1168,13 @@ body {
 
 #neptune .planet {
   background-image: url('../../images/planeten/neptun.png');
+}
+
+/* --------------------------------------------------------------------------- pause */
+
+#play {
+    width: 1em;
+    height: 1em;
 }
 
 /* --------------------------------------------------------------------------- responsive styles */
