@@ -169,6 +169,16 @@ body {
   }
 }
 
+#uranus .ring {
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  border: 0.3em solid rgba(104, 168, 241, 0.7);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 /* --------------------------------------------------------------------------- planets index */
 
 #mercury {
@@ -384,14 +394,14 @@ body {
 }
 
 #uranus {
-  .pos, .planet, &.orbit {
-    animation-duration: 1008.20215s;
+  .pos, .planet, &.orbit, .ring {
+    animation-duration: 108.20215s;
   }
 }
 
 #neptune {
   .pos, .planet, &.orbit {
-    animation-duration: 1977.49584s;
+    animation-duration: 877.49584s;
   }
 }
 
