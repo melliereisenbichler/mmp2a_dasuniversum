@@ -356,40 +356,11 @@ section {
 .zoom-large.view-3D .scale-s #solar-system {
   font-size: 14%; }
 
-/* --------------------------------------------------------------------------- close zoom */
-.zoom-close #solar-system {
-  width: 200%;
-  font-size: 100%; }
-
-.zoom-close .scale-stretched #solar-system {
-  margin-left: -100%; }
-
-.zoom-close .scale-d #solar-system {
-  margin-left: -106%; }
-
-.zoom-close.view-3D .scale-d #solar-system {
-  font-size: 84%; }
-
-.zoom-close .scale-s #solar-system {
-  margin-left: -145%; }
-
-.zoom-close.view-3D .scale-s #solar-system {
-  font-size: 40%; }
-
-.zoom-close .orbit, .zoom-close .pos, .zoom-close .planet, .zoom-close .satelite, .zoom-close .ring {
+/* --------------------------------------------------------------------------- pause */
+.pause_anim .orbit, .pause_anim .pos, .pause_anim .planet, .pause_anim .satelite, .pause_anim .ring {
   animation-play-state: paused !important;
   animation-duration: 0s !important;
   animation: none !important; }
-
-.zoom-close.view-3D .planet {
-  transform: rotateX(-90deg); }
-
-.zoom-close.view-3D .moon {
-  transform: rotateX(90deg); }
-
-.zoom-close .pos {
-  left: 100% !important;
-  top: 50% !important; }
 
 /* sideral years */
 #mercury .pos, #mercury .planet, #mercury.orbit {
@@ -1012,6 +983,11 @@ section {
 
 #neptune .planet {
   background-image: url("../../images/planeten/neptun.png"); }
+
+/* --------------------------------------------------------------------------- pause */
+#play {
+  width: 1em;
+  height: 1em; }
 
 /* --------------------------------------------------------------------------- responsive styles */
 @media screen and (max-width: 299px) {
