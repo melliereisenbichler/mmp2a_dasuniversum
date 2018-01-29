@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Slider - Snap to increments</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+    <section id="slide">
+        <div id="slider"></div>
+    </section>
+
+
+
+    <script>
+     $("#slider").slider({
+        max:12,
+        min:0.2,
+        step:0.1,
+        value:1,
+        slide: function(event, ui) {  
+            $("#amount").val(ui.value);
+            $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">'+ui.value+'</div>');
+
+
+        } ,
+        change :function(event, ui) {  
+            $("#amount").val(ui.value);
+            $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">'+ui.value+'</div>');
+
+        } 
+    });
+    
+
+    </script>
+
+</body>
+</html>
