@@ -7,6 +7,8 @@
     </head>
     <body>
         <header>
+            <h1>dasuniversum</h1>
+
             <!--    Made by Erik Terwan    -->
             <!--   24th of November 2015   -->
             <!--    All rights reserved    -->
@@ -33,12 +35,106 @@
             </nav>
         </header>
 
-        <h1>dasuniversum</h1>
 
-        <p>This is a paragraph.</p>
-
+        <section id="opening zoom-large">
+            <div id="universe" class="scale-stretched">
+              <div id="galaxy">
+                <div id="solar-system" class="earth">
+                  
+                  <div id="mercury" class="orbit">
+                    <div class="pos">
+                      <div class="planet">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="venus" class="orbit">
+                    <div class="pos">
+                      <div class="planet">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="earth" class="orbit">
+                    <div class="pos">
+                      <div class="orbit">
+                        <div class="pos">
+                          <div class="moon"></div>
+                        </div>
+                      </div>
+                      <div class="planet">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="mars" class="orbit">
+                    <div class="pos">
+                      <div class="planet">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="jupiter" class="orbit">
+                    <div class="pos">
+                      <div class="planet">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="saturn" class="orbit">
+                    <div class="pos">
+                      <div class="planet">
+                        <div class="ring"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="uranus" class="orbit">
+                    <div class="pos">
+                      <div class="planet"> 
+                          <div class="ring"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="neptune" class="orbit">
+                    <div class="pos">
+                      <div class="planet">   
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="sun">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+          
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>  
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') { 
+            document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/scripts.min.js"></script>
+        <script>
+            $(window).load(function(){
+            var body = $("body"),
+                universe = $("#universe"),
+                solarsys = $("#solar-system");
+
+            var init = function() {
+                body.addClass("view-3D")
+            };
+
+            init();
+
+            });    
+        </script>
     </body>
 </html>
