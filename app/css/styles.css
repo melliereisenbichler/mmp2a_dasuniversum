@@ -177,8 +177,7 @@ section {
 #galaxy {
   position: relative;
   width: 100%;
-  height: 100%;
-  /*perspective: 4000;*/ }
+  height: 100%; }
 
 #solar-system {
   position: absolute;
@@ -356,10 +355,6 @@ section {
 .zoom-large.view-3D .scale-s #solar-system {
   font-size: 14%; }
 
-<<<<<<< HEAD
-/* --------------------------------------------------------------------------- pause */
-.pause_anim .orbit, .pause_anim .pos, .pause_anim .planet, .pause_anim .satelite, .pause_anim .ring {
-=======
 /* --------------------------------------------------------------------------- close zoom */
 .zoom-close #solar-system {
   width: 200%;
@@ -385,10 +380,19 @@ section {
 .zoom-close .planet,
 .zoom-close .satelite,
 .zoom-close .ring {
->>>>>>> 1f9bdee74abd5f5997cbf2dbe3cdce373745fb47
   animation-play-state: paused !important;
   animation-duration: 0s !important;
   animation: none !important; }
+
+.zoom-close.view-3D .planet {
+  transform: rotateX(-90deg); }
+
+.zoom-close.view-3D .moon {
+  transform: rotateX(90deg); }
+
+.zoom-close .pos {
+  left: 100% !important;
+  top: 50% !important; }
 
 /* sideral years */
 #mercury .pos,
