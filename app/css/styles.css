@@ -1033,6 +1033,11 @@ section {
 #neptune .planet {
   background-image: url("../../images/planeten/neptun.png"); }
 
+/* --------------------------------------------------------------------------- pause */
+#play {
+  width: 1em;
+  height: 1em; }
+
 /* --------------------------------------------------------------------------- responsive styles */
 @media screen and (max-width: 299px) {
   #universe {

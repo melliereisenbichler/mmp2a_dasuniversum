@@ -308,7 +308,6 @@ section {
   }
 }
 
-<<<<<<< HEAD
 /* --------------------------------------------------------------------------- close zoom */
 .zoom-close #solar-system {
   width: 200%;
@@ -316,17 +315,8 @@ section {
 
 .zoom-close .scale-stretched #solar-system {
   margin-left: -100%; }
-=======
-/* --------------------------------------------------------------------------- pause */
 
-.pause_anim {
-  .orbit, .pos, .planet, .satelite, .ring {
-    animation-play-state: paused !important;
-    animation-duration: 0s !important;
-    animation: none !important;
-  }
-}
->>>>>>> 70e9433a3ede6915af33374bba608045cb12b003
+
 
 .zoom-close .scale-d #solar-system {
   margin-left: -106%; }
