@@ -308,91 +308,77 @@ section {
 }
 
 /* --------------------------------------------------------------------------- close zoom */
-.zoom-close #solar-system {
-  width: 200%;
-  font-size: 100%; }
-
-.zoom-close .scale-stretched #solar-system {
-  margin-left: -100%; }
-
-
-
-.zoom-close .scale-d #solar-system {
-  margin-left: -106%; }
-
-.zoom-close.view-3D .scale-d #solar-system {
-  font-size: 84%; }
-
-.zoom-close .scale-s #solar-system {
-  margin-left: -145%; }
-
-.zoom-close.view-3D .scale-s #solar-system {
-  font-size: 40%; }
-
-.zoom-close .orbit,
-.zoom-close .pos,
-.zoom-close .planet,
-.zoom-close .satelite,
-.zoom-close .ring {
-  animation-play-state: paused!important;
-  animation-duration: 0s!important;
-  animation: none!important; }
-
-.zoom-close.view-3D .planet {
-  transform: rotateX(-90deg); }
-
-.zoom-close.view-3D .moon {
-  transform: rotateX(90deg); }
-
-.zoom-close .pos {
-  left: 100%!important;
-  top: 50%!important; }
+.pause_anim {
+  .orbit, .pos, .planet, .satelite, .ring {
+    animation-play-state: paused !important;
+    animation-duration: 0s !important;
+    animation: none !important;
+  }
+  &.view-3D {
+    .planet {
+      transform: rotateX(-90deg);
+    }
+    .moon {
+      transform: rotateX(90deg);
+    }
+  }
+}
 
 /* sideral years */
-#mercury .pos,
-#mercury .planet,
-#mercury.orbit {
-  animation-duration: 2.89016s; }
 
-#venus .pos,
-#venus .planet,
-#venus.orbit {
-  animation-duration: 7.38237s; }
+#mercury {
+  .pos, .planet, &.orbit {
+    animation-duration: 2.89016s;
+  }
+}
 
-#earth .pos,
-#earth .planet,
-#earth.orbit {
-  animation-duration: 12.00021s; }
+#venus {
+  .pos, .planet, &.orbit {
+    animation-duration: 7.38237s;
+  }
+}
 
-#earth .orbit .pos,
-#earth .orbit {
-  animation-duration: 0.89764s; }
+#earth {
+  .pos, .planet, &.orbit {
+    animation-duration: 12.00021s;
+  }
+  .orbit {
+    .pos {
+      animation-duration: 0.89764s;
+    }
+    animation-duration: 0.89764s;
+  }
+}
 
-#mars .pos,
-#mars .planet,
-#mars.orbit {
-  animation-duration: 22.57017s; }
+#mars {
+  .pos, .planet, &.orbit {
+    animation-duration: 22.57017s;
+  }
+}
 
-#jupiter .pos,
-#jupiter .planet,
-#jupiter.orbit {
-  animation-duration: 142.35138s; }
+#jupiter {
+  .pos, .planet, &.orbit {
+    animation-duration: 142.35138s;
+  }
+}
 
-#saturn .pos,
-#saturn .planet,
-#saturn.orbit,
-#saturn .ring {
-  animation-duration: 353.36998s; }
+#saturn {
+  .pos, .planet, &.orbit, .ring {
+    animation-duration: 353.36998s;
+  }
+}
 
-#uranus .pos,
-#uranus .planet,
-#uranus.orbit {
-  animation-duration: 1008.20215s; }
+#uranus {
+  .pos, .planet, &.orbit {
+    animation-duration: 1008.20215s;
+  }
+}
 
-#neptune .pos,
-#neptune .planet,
-#neptune.orbit {
-  animation-duration: 1977.49584s; }
+#neptune {
+  .pos, .planet, &.orbit {
+    animation-duration: 1977.49584s;
+  }
+}
 
 /* --------------------------------------------------------------------------- stretched sizes */
 
