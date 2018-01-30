@@ -21,39 +21,63 @@
         flex-direction: row;
         justify-content: space-around;
         width: 80%;
-        h1 {
-            font-size: 1.5em;
-        }
+        padding-bottom: 5em;
         #desc {
-            
+            h2 {
+                font-family: Astrolytt;
+                margin: 0;
+                font-size: 1.5em;
+                color: $zodiacpurple;
+            }
             display: flex;
             flex-direction: column;
-            background: green;
+            justify-content: flex-start;
             width: 45%;
-            align-items: flex-start;
             #cont_desc {
+                margin-top: 5%;
                 background: $softblanc;
+                opacity: 0.85;
                 width: 80%;
+                border: 1px solid $softblanc;
+                border-radius: 0.752em;
                 ul {
+                    color: $noir;
+                    line-height: 2em;
                     li:before {
                         content: "\2605";
                         margin: 0 1em;
                     }
                 }
             }
-        }
-        
+        }   
         #galery {
             display: flex;
             flex-direction: column;
-            background: red;
             width: 45%;
             align-items: flex-end;
+            h2 {
+                text-align: right;
+                font-family: Astrolytt;
+                margin: 0;
+                font-size: 1.5em;
+                color: $zodiacpurple;
+                width: 100%;
+            }
             #imgs {
+                margin-top: 5%;
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: flex-end;
+                opacity: 0.85;
                 width: 80%;
-                background: $softblanc;
+                img {
+                    height: 6em;
+                    width: 6em;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+                    border: 0.035em solid $softblanc;
+                    border-radius: 1em;
+                }
             }
         }
     }
