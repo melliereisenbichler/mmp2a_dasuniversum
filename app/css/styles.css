@@ -2542,7 +2542,27 @@ section {
   line-height: 1.2em; }
 
 .ui-slider .ui-slider-handle {
-  width: 30px; }
+  width: 30px;
+  height: 20px; }
+
+.ui-state-default, .ui-widget-content
+.ui-state-default, .ui-widget-header
+.ui-state-default, .ui-button {
+  padding-top: 5px;
+  font-family: Astrolytt;
+  font-size: 1.7em; }
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.8em; }
+
+.ui-state-active, .ui-widget-content
+.ui-state-active, .ui-widget-header
+.ui-state-active, a.ui-widget-button:active {
+  border: 1px solid #78d6f8;
+  background: #78d6f8;
+  color: #333333;
+  font-family: Astrolytt;
+  font-size: 1.7em; }
 
 @font-face {
   font-family: "ASTROLYTT";
