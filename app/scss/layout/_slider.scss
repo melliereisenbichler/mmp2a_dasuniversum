@@ -12,5 +12,29 @@
   }
   
   .ui-slider .ui-slider-handle {
-    width: 30px;
+    width: 3em;
+    height: 1.7em;
+  }
+  
+  .ui-state-default, .ui-widget-content
+  .ui-state-default, .ui-widget-header
+  .ui-state-default, .ui-button{
+    padding-top: 0.5em;
+    font-family: Astrolytt;
+    font-size: 1.5em;
+  }
+
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -0.8em;
+  }
+
+  .ui-state-active, .ui-widget-content
+  .ui-state-active, .ui-widget-header
+  .ui-state-active, a.ui-widget-button:active{
+    border: 1px solid $cosmicblue;
+    background: $cosmicblue;
+    color: $noir;
+    font-family: Astrolytt;
+    font-size: 1.6em;
+    cursor: pointer;
   }

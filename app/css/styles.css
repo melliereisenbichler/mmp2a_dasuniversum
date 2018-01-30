@@ -1629,7 +1629,7 @@ a {
   Copyright (c) 2012 Julian Garnier
   Licensed under the MIT license
 */
-html, section, div {
+html, #opening, div {
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -1637,10 +1637,10 @@ html, section, div {
   margin: 0;
   padding: 0; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, #opening {
   display: block; }
 
-section {
+#opening {
   line-height: 1; }
 
 ol, ul {
@@ -1664,7 +1664,7 @@ table {
   box-sizing: border-box;
   box-sizing: border-box; }
 
-section {
+#anim {
   font-size: 6.8px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -1828,10 +1828,10 @@ section {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
 
 /* --------------------------------------------------------------------------- opening */
-.view-3D .opening #sun, .view-3D .opening .orbit, .view-3D .opening .pos, .view-3D .opening .planet, .view-3D .opening .satelite, .view-3D .opening .ring {
+.view-3D #opening #sun, .view-3D #opening .orbit, .view-3D #opening .pos, .view-3D #opening .planet, .view-3D #opening .satelite, .view-3D #opening .ring {
   transition-duration: 4s; }
 
-#universe.opening #sun {
+#universe#opening #sun {
   box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
 
 /* --------------------------------------------------------------------------- 3D view */
@@ -2452,11 +2452,11 @@ section {
 .pos {
   transition-delay: 1s; }
 
-.opening #solar-system, .opening #sun, .opening .orbit, .opening .pos, .opening .planet, .opening .satelite, .opening .ring {
+#opening #solar-system, #opening #sun, #opening .orbit, #opening .pos, #opening .planet, #opening .satelite, #opening .ring {
   transition-duration: 0s;
   transition-delay: 0s; }
 
-.opening .pos {
+#opening .pos {
   transition-delay: 0s; }
 
 /* --------------------------------------------------------------------------- images */
@@ -2543,15 +2543,26 @@ section {
   line-height: 1.2em; }
 
 .ui-slider .ui-slider-handle {
+<<<<<<< HEAD
   width: 30px;
   height: 20px; }
+=======
+  width: 3em;
+  height: 1.7em; }
+>>>>>>> isabella
 
 .ui-state-default, .ui-widget-content
 .ui-state-default, .ui-widget-header
 .ui-state-default, .ui-button {
+<<<<<<< HEAD
   padding-top: 5px;
   font-family: Astrolytt;
   font-size: 1.7em; }
+=======
+  padding-top: 0.5em;
+  font-family: Astrolytt;
+  font-size: 1.5em; }
+>>>>>>> isabella
 
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.8em; }
@@ -2563,7 +2574,12 @@ section {
   background: #78d6f8;
   color: #333333;
   font-family: Astrolytt;
+<<<<<<< HEAD
   font-size: 1.7em; }
+=======
+  font-size: 1.6em;
+  cursor: pointer; }
+>>>>>>> isabella
 
 @font-face {
   font-family: "ASTROLYTT";
