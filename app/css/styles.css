@@ -2555,6 +2555,10 @@ section {
   font-size: 1.6em;
   cursor: pointer; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1c6a89794b7fe59579df5f558509d2fdb3258e5e
 #cont {
   width: 100%;
   height: 50%;
@@ -2567,10 +2571,15 @@ section {
     margin-top: 2em;
     margin-bottom: 2em;
     width: 7em; }
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 1c6a89794b7fe59579df5f558509d2fdb3258e5e
 #play {
   width: 2em;
   height: 2em; }
+>>>>>>> c7632a0d6a254f4418ee182810f9ae7cd29498ad
 
 @font-face {
   font-family: "ASTROLYTT";
