@@ -4,7 +4,7 @@
   }
   
   #slider {
-    width: 50em;
+    width: 60%;
     height: 0.5em;
     margin-top: 8em;
     text-align: center;
@@ -46,13 +46,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     
     img{    
         display: none;
         margin-top: 2em;
         margin-bottom: 2em;
-        width: 7em;
     }
-    
+    #MERKUR {
+        width: 1.5em;
+    }
+    #VENUS {
+        width: 4.75em;
+    }
+    #ERDE {
+        width: 5em;
+    }
+    #MARS {
+        width: 2.5em;
+    }
+    #JUPITER {
+        width: 30em;
+    }
+    #SATURN {
+        width: 25em;
+    }
+    #URANUS {
+        width: 18em;
+    }
+    #NEPTUN {
+        width: 18em;
+    }
 }
