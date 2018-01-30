@@ -1559,7 +1559,7 @@ a {
   #menuToggle span {
     z-index: 99;
     display: block;
-    width: 2.063em;
+    width: 2em;
     height: 0.250em;
     margin-bottom: 0.313em;
     position: relative;
@@ -2720,6 +2720,58 @@ table {
     height: 3.3em;
     background-image: url("../../images/planets/neptune.png");
     background-size: cover; }
+
+#theplanets {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #theplanets h1 {
+    width: 80%;
+    font-size: 3em; }
+  #theplanets #allplanets {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #theplanets #allplanets #row1, #theplanets #allplanets #row2, #theplanets #allplanets #row3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin: 2em; }
+    #theplanets #allplanets .planet_cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 10em;
+      width: 8em; }
+      #theplanets #allplanets .planet_cont img {
+        width: 7em;
+        height: 7em; }
+      #theplanets #allplanets .planet_cont h2 {
+        color: #f6f6f6;
+        font-family: Astrolytt; }
+    #theplanets #allplanets .saturn {
+      height: 10em;
+      width: 8em; }
+      #theplanets #allplanets .saturn img {
+        width: 10em;
+        height: 9em; }
+      #theplanets #allplanets .saturn h2 {
+        text-align: center; }
+    #theplanets #allplanets .sonne {
+      height: 10em;
+      width: 8em; }
+      #theplanets #allplanets .sonne img {
+        width: 8em;
+        height: 8em; }
+  #theplanets #regler {
+    width: 80%;
+    text-align: center;
+    background: lightcoral;
+    color: #f6f6f6;
+    padding: 2em; }
 
 @font-face {
   font-family: "ASTROLYTT";

@@ -1,84 +1,66 @@
-#planets{
+#theplanets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1{
-      font-size: 2.5em;  
+        width: 80%;
+        font-size: 3em;
     }
-    #content{
+    #allplanets{
+        width: 80%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
         flex-direction: column;
-        #row0{
-            margin-bottom: 3em;
-            .sonne{
-                height: 8em;
-                width: 8em;
-                background-image: url('/images/planets/sun.png');
-                background-size: cover; 
-            } 
-        }
-        #row1{
+        align-items: center;
+        
+        #row1, #row2, #row3{
             display: flex;
-            justify-content: space-around;
-            align-items: center;
             flex-direction: row;
+            justify-content: space-around;
             width: 100%;
-            div{
-                height: 8em;
-                width: 8em;
-                background-size: cover; 
-            } 
-            .merkur{
-                background-image: url('/images/planets/mercury.png');
-            } 
-            .venus{
-                background-image: url('/images/planets/venus.png');
-            }
-            .erde{
-                background-image: url('/images/planets/earth.png');
-            }
+            margin: 2em;
         }
-        #row2{
+        .planet_cont{
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             align-items: center;
-            flex-direction: row;
-            width: 100%;
-            margin: 3em;
-            div{
-                height: 8em;
-                width: 8em;
-                background-size: cover; 
-            } 
-            .mars{
-                background-image: url('/images/planets/mars.png');
-            } 
-            .jupiter{
-                background-image: url('/images/planets/jupiter.png');
+            justify-content: flex-start;
+
+            height: 10em;
+            width: 8em;
+            img{
+                 width: 7em;
+                height: 7em;   
             }
-            .saturn{
-                background-image: url('/images/planets/saturn.png');
+            h2{
+                color: $softblanc;
+                font-family: Astrolytt;
             }
         }
-        #row3{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
-            div{
-                height: 8em;
-                width: 8em;
-                background-size: cover; 
-            } 
-            .uranus{
-                background-image: url('/images/planets/uranus.png');
-            } 
-            .neptun{
-                background-image: url('/images/planets/neptune.png');
+        .saturn{
+            height: 10em;
+            width: 8em;
+            img{
+                width: 10em;
+                height: 9em;
             }
-            .pluto{
-                background-image: url('/images/planets/pluto.png');
+            h2{
+                text-align: center;
             }
         }
+        .sonne{
+            height: 10em;
+            width: 8em;
+            img{
+                width: 8em;
+                height: 8em;
+            }
+        }
+    }
+    #regler{
+        width: 80%;
+        text-align: center;
+        background: lightcoral;
+        color: $softblanc;
+        padding: 2em;
     }
 }
