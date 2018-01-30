@@ -1,0 +1,32 @@
+#content{
+    #nav {
+        display: flex;
+    }
+    
+    #planetrow {
+        display: flex;
+    }
+    
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #main_cont {
+        #desc {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #galery {
+            display: flex;
+            flex-direction: column;
+            
+            #imgs {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
