@@ -1700,9 +1700,11 @@ section {
   transform-style: preserve-3d;
   animation-name: orbit;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear;
+  animation-play-state: running; }
   .orbit .orbit {
-    animation-name: suborbit; }
+    animation-name: suborbit;
+    animation-play-state: running; }
 
 .pos {
   position: absolute;
@@ -1864,7 +1866,6 @@ section {
 /* --------------------------------------------------------------------------- close zoom */
 .pause_anim .orbit, .pause_anim .pos, .pause_anim .planet, .pause_anim .satelite, .pause_anim .ring {
   animation-play-state: paused !important;
-  animation-duration: 0s !important;
   animation: none !important; }
 
 .pause_anim.view-3D .planet {

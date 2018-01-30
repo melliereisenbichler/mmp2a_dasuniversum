@@ -94,8 +94,10 @@ section {
   animation-name: orbit;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-play-state: running;
   .orbit {
     animation-name: suborbit;
+    animation-play-state: running;
   }
 }
 
@@ -311,7 +313,6 @@ section {
 .pause_anim {
   .orbit, .pos, .planet, .satelite, .ring {
     animation-play-state: paused !important;
-    animation-duration: 0s !important;
     animation: none !important;
   }
   &.view-3D {
