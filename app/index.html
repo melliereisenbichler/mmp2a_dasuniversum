@@ -112,8 +112,12 @@
                 </div>
               </section>
         </section>
-          
-
+        <section id="play">
+            <label class="set_state">
+              <input type="checkbox">
+            </label>
+        </section>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script type="text/javascript">
@@ -121,19 +125,19 @@
             document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
             }
         </script>
-        <script src="js/prefixfree.min.js"></script>
-        <script src="js/scripts.min.js"></script>
         <script>
             $(window).load(function(){
-            var body = $("body"),
-                universe = $("#universe"),
-                solarsys = $("#solar-system");
+              var body = $("body"),
+                  universe = $("#universe"),
+                  solarsys = $("#solar-system");
 
-            var init = function() {
+              var init = function() {
                 body.addClass("view-3D")
-            };
+              };
 
-            init();
+              $(".set_state").click(function() { body.toggleClass("pause_anim"); });
+
+              init();
 
             });    
         </script>

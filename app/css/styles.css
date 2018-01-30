@@ -1863,16 +1863,9 @@ table {
 .zoom-large.view-3D .scale-s #solar-system {
   font-size: 14%; }
 
-/* --------------------------------------------------------------------------- close zoom */
+/* --------------------------------------------------------------------------- pause animation */
 .pause_anim .orbit, .pause_anim .pos, .pause_anim .planet, .pause_anim .satelite, .pause_anim .ring {
-  animation-play-state: paused !important;
-  animation: none !important; }
-
-.pause_anim.view-3D .planet {
-  transform: rotateX(-90deg); }
-
-.pause_anim.view-3D .moon {
-  transform: rotateX(90deg); }
+  animation-play-state: paused; }
 
 /* sideral years */
 #mercury .pos, #mercury .planet, #mercury.orbit {
@@ -2493,11 +2486,6 @@ section {
 #neptune .planet {
   background-image: url("../../images/planeten/neptun.png"); }
 
-/* --------------------------------------------------------------------------- pause */
-#play {
-  width: 1em;
-  height: 1em; }
-
 /* --------------------------------------------------------------------------- responsive styles */
 @media screen and (max-width: 299px) {
   #universe {
@@ -2543,26 +2531,15 @@ section {
   line-height: 1.2em; }
 
 .ui-slider .ui-slider-handle {
-<<<<<<< HEAD
-  width: 30px;
-  height: 20px; }
-=======
   width: 3em;
   height: 1.7em; }
->>>>>>> isabella
 
 .ui-state-default, .ui-widget-content
 .ui-state-default, .ui-widget-header
 .ui-state-default, .ui-button {
-<<<<<<< HEAD
-  padding-top: 5px;
-  font-family: Astrolytt;
-  font-size: 1.7em; }
-=======
   padding-top: 0.5em;
   font-family: Astrolytt;
   font-size: 1.5em; }
->>>>>>> isabella
 
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.8em; }
@@ -2574,12 +2551,12 @@ section {
   background: #78d6f8;
   color: #333333;
   font-family: Astrolytt;
-<<<<<<< HEAD
-  font-size: 1.7em; }
-=======
   font-size: 1.6em;
   cursor: pointer; }
->>>>>>> isabella
+
+#play {
+  width: 2em;
+  height: 2em; }
 
 @font-face {
   font-family: "ASTROLYTT";
