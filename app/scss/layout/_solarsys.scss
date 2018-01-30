@@ -5,7 +5,7 @@
   Licensed under the MIT license
 */
 
-html, section, div {
+html, #opening, div {
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -14,11 +14,11 @@ html, section, div {
   padding: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, #opening {
   display: block;
 }
 
-section {
+#opening {
   line-height: 1;
 }
 
@@ -53,7 +53,7 @@ table {
   box-sizing: border-box;
 }
 
-section {
+#anim {
   font-size: 6.8px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -258,13 +258,13 @@ section {
 
 /* --------------------------------------------------------------------------- opening */
 
-.view-3D .opening {
+.view-3D #opening {
   #sun, .orbit, .pos, .planet, .satelite, .ring {
     transition-duration: 4s;
   }
 }
 
-#universe.opening #sun {
+#universe#opening #sun {
   box-shadow: 0 0 0 rgba(255, 160, 60, 0);
 }
 
@@ -1116,7 +1116,7 @@ section {
   transition-delay: 1s;
 }
 
-.opening {
+#opening {
   #solar-system, #sun, .orbit, .pos, .planet, .satelite, .ring {
     transition-duration: 0s;
     transition-delay: 0s;
