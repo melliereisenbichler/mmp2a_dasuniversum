@@ -1,0 +1,25 @@
+#info{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    h1{
+        
+    }
+    #cont{
+        justify-content: center;
+        p{
+            color: $noir;
+        }
+        background: $softblanc;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        width: 60%;
+        opacity: 0.85;
+        padding: 1.5em;
+        border: 0.05em solid $softblanc;
+        border-radius: 1.3em;
+    }
+}
