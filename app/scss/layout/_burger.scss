@@ -25,7 +25,8 @@ a {
   color: #232323;
   transition: color 0.3s ease;
   &:hover {
-    color: tomato;
+    color: $cosmicblue;
+    font-style: italic;
   }
 }
 
@@ -58,7 +59,7 @@ a {
     height: 0.250em;
     margin-bottom: 0.313em;
     position: relative;
-    background: #cdcdcd;
+    background: $zodiacpurple;
     border-radius: 0.188em;
     transform-origin: 0.250em 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
