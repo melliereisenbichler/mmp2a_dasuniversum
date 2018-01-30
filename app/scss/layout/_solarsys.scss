@@ -309,20 +309,11 @@ table {
   }
 }
 
-/* --------------------------------------------------------------------------- close zoom */
+/* --------------------------------------------------------------------------- pause animation */
 .pause_anim {
   .orbit, .pos, .planet, .satelite, .ring {
-    animation-play-state: paused !important;
-    animation: none !important;
-  }
-  &.view-3D {
-    .planet {
-      transform: rotateX(-90deg);
+    animation-play-state: paused; 
     }
-    .moon {
-      transform: rotateX(90deg);
-    }
-  }
 }
 
 /* sideral years */
@@ -1172,13 +1163,6 @@ section {
 
 #neptune .planet {
   background-image: url('../../images/planeten/neptun.png');
-}
-
-/* --------------------------------------------------------------------------- pause */
-
-#play {
-    width: 1em;
-    height: 1em;
 }
 
 /* --------------------------------------------------------------------------- responsive styles */
