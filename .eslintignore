@@ -1,0 +1,4 @@
+#ignore query
+app/js/jquery.min.js
+dist/main.js
+build/main.js
