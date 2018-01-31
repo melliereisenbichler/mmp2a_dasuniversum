@@ -116,7 +116,7 @@
             <section id="play">
             <input class="set_state" type="checkbox" />
 
-            <span id="backg"><span id="playbutt" class="pausebutton"></span></span>
+            <span id="backg"><span id="pausebutton"></span></span>
 
 
             </section>
@@ -134,12 +134,15 @@
               var body = $("body"),
                   universe = $("#universe"),
                   solarsys = $("#solar-system");
+              var btn = $('#pausebutton');
 
               var init = function() {
                 body.addClass("view-3D")
               };
 
-              $(".set_state").click(function() { body.toggleClass("pause_anim"); });
+              $(".set_state").click(function() { body.toggleClass("pause_anim");
+              btn.toggleClass("playbutton");
+              });
 
               init();
 
