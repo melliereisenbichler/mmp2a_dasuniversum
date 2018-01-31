@@ -28,20 +28,33 @@
             height: 10em;
             width: 8em;
             img{
-                 width: 7em;
-                height: 7em;   
+                    width: 7em;
+                    height: 7em;   
+                &:hover{
+                    width: 8em;
+                    height: 8em;
+                }
             }
             h2{
                 color: $softblanc;
                 font-family: Astrolytt;
+                font-style: normal;
+                &:hover {
+                    color: $cosmicblue;
+                    font-style: italic;
+                }
             }
         }
         .saturn{
             height: 10em;
             width: 8em;
             img{
-                    width: 9em;
-                    height: 7em;
+                width: 9em;
+                height: 7em;
+                &:hover{
+                    width: 10em;
+                    height: 8em;
+                }
             }
             h2{
                 text-align: center;
@@ -53,6 +66,10 @@
             img{
                 width: 8em;
                 height: 8em;
+                &:hover{
+                    width: 9em;
+                    height: 9em;
+                }
             }
         }
     }
