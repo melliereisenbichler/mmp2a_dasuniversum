@@ -17,12 +17,19 @@
 }
 
 a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-  &:hover {
-    color: $cosmicblue;
-    font-style: italic;
-  }
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $cosmicblue;
+        font-style: italic;
+    }
+    &:visited{
+        color: $noir;
+    }
+    &:visited:hover{
+        color: $cosmicblue;
+    }
+
 }
 
 #menuToggle {
