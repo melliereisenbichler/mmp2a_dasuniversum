@@ -1522,15 +1522,10 @@ body {
   margin: 0;
   padding: 0;
   /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-  overflow-x: hidden;
-  /* needed because hiding the menu on the right side is not perfect,  */ }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
-  color: #232323;
   transition: color 0.3s ease; }
   a:hover {
     color: #78d6f8;
@@ -1583,23 +1578,6 @@ a {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px); }
 
-/*
- * Just a quick hamburger
- */
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-/*
- * But let's hide the middle one.
- */
-/*
- * Ohyeah and the last one should go the other direction
- */
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   position: absolute;
   width: 16em;
@@ -1621,9 +1599,6 @@ a {
     padding: 0.5em 0;
     font-size: 1.3em; }
 
-/*
- * And let's fade it in from the left
- */
 #menuToggle input:checked ~ ul {
   transform: scale(1, 1);
   opacity: 1; }
@@ -2594,8 +2569,8 @@ table {
   user-select: none; }
   #play input {
     display: block;
-    width: 4em;
-    height: 4em;
+    width: 6em;
+    height: 6em;
     position: absolute;
     top: -0.5em;
     left: -0.5em;
@@ -2614,31 +2589,26 @@ table {
     border: 1px solid #c0b2ee;
     border-radius: 25%;
     box-shadow: 0.15em 0.15em 0.38em #f6f6f6; }
-  #play .playbutton {
-    z-index: 99;
-    display: block;
-    top: 25%;
-    left: 30%;
-    margin-bottom: 0.313em;
-    position: relative;
-    width: 0;
-    height: 0;
-    -webkit-transform: rotate(360deg);
-    border-style: solid;
-    border-width: 1em 0 1em 2em;
-    border-color: transparent transparent transparent #333333; }
-  #play .pausebutton {
+  #play #pausebutton {
     z-index: 99;
     display: block;
     top: 25%;
     left: 25%;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
     margin-bottom: 0.313em;
     position: relative;
-    border-style: double;
-    border-width: 1em;
-    border-color: #202020; }
+    border-left: 0.8em solid #333333;
+    border-right: 0.8em solid #333333; }
+  #play #pausebutton.playbutton {
+    left: 30%;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 2em solid #333333;
+    border-right: 0em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-top: 1em solid transparent; }
 
 #home {
   display: flex;
@@ -2743,52 +2713,79 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 75%;
-  height: auto; }
+  height: 12em; }
   #planetrow #sonne {
-    width: 10em;
-    height: 10em;
+    width: 90%;
+    height: 90%;
     background-image: url("../../images/planets/sun.png");
     background-size: cover; }
+    #planetrow #sonne:hover {
+      width: 11em;
+      height: 11em; }
   #planetrow #mercury {
-    width: 4.5em;
-    height: 4.5em;
+    width: 60%;
+    height: 60%;
     background-image: url("../../images/planets/mercury.png");
     background-size: cover; }
+    #planetrow #mercury:hover {
+      width: 5.5em;
+      height: 5.5em; }
   #planetrow #venus {
-    width: 5.1em;
-    height: 5.3em;
+    width: 65%;
+    height: 65%;
     background-image: url("../../images/planets/venus.png");
     background-size: cover; }
+    #planetrow #venus:hover {
+      width: 6.1em;
+      height: 6.3em; }
   #planetrow #earth {
-    width: 5.5em;
-    height: 5.5em;
+    width: 80%;
+    height: 80%;
     background-image: url("../../images/planets/earth.png");
     background-size: cover; }
+    #planetrow #earth:hover {
+      width: 6.5em;
+      height: 6.5em; }
   #planetrow #mars {
-    width: 5em;
-    height: 4.9em;
+    width: 70%;
+    height: 70%;
     background-image: url("../../images/planets/mars.png");
     background-size: cover; }
+    #planetrow #mars:hover {
+      width: 6em;
+      height: 5.9em; }
   #planetrow #jupiter {
-    width: 7.6em;
-    height: 7.4em;
+    width: 95%;
+    height: 95%;
     background-image: url("../../images/planets/jupiter.png");
     background-size: cover; }
+    #planetrow #jupiter:hover {
+      width: 8.6em;
+      height: 8.4em; }
   #planetrow #saturn {
-    width: 9.6em;
-    height: 6.9em;
+    width: 95%;
+    height: 95%;
     background-image: url("../../images/planets/saturn.png");
     background-size: cover; }
+    #planetrow #saturn:hover {
+      width: 10.6em;
+      height: 7.8em; }
   #planetrow #uranus {
-    width: 6.4em;
-    height: 6.2em;
+    width: 70%;
+    height: 70%;
     background-image: url("../../images/planets/uranus.png");
     background-size: cover; }
+    #planetrow #uranus:hover {
+      width: 7.4em;
+      height: 7.2em; }
   #planetrow #neptune {
-    width: 5.4em;
-    height: 5.3em;
+    width: 60%;
+    height: 60%;
     background-image: url("../../images/planets/neptune.png");
     background-size: cover; }
+    #planetrow #neptune:hover {
+      width: 5.8em;
+      height: 5.6em; }
 
 #theplanets {
   display: flex;
@@ -2858,6 +2855,8 @@ table {
 #planetrow {
   margin-left: auto;
   margin-right: auto; }
+  #planetrow a img {
+    width: auto; }
 
 #quiz {
   display: flex;
@@ -3008,7 +3007,9 @@ table {
 -}
 -*/
 body {
-  font-family: Roboto; }
+  font-family: Roboto;
+  background: url("../images/star_background.jpg");
+  background-size: cover; }
   body h1 {
     color: #c0b2ee;
     font-family: Astrolytt;
