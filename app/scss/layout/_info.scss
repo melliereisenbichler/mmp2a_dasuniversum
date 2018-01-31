@@ -5,18 +5,17 @@
     flex-direction: column;
     justify-content: center;
 align-items: center;
-    h1{
-        
-    }
     #cont{
+        flex-direction: column;
         justify-content: center;
         p{
             color: $noir;
+            width: 80%;
         }
         background: $softblanc;
         margin-top: 2em;
         margin-bottom: 5em;
-        width: 60%;
+        width: 50%;
         opacity: 0.85;
         padding: 1.5em;
         border: 0.05em solid $softblanc;
