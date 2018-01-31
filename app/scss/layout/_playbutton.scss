@@ -9,8 +9,8 @@
     user-select: none;
     input {
         display: block;
-        width: 4em;
-        height: 4em;
+        width: 6em;
+        height: 6em;
         position: absolute;
         top: -0.5em;
         left: -0.5em;
@@ -31,33 +31,27 @@
         border-radius: 25%;
         box-shadow: 0.15em 0.15em 0.38em $softblanc;
     }
-    .playbutton {
-        z-index: 99;
-        display: block;
-        top: 25%;
-        left: 30%;
-        margin-bottom: 0.313em;
-        position: relative;
-        width: 0;
-        height: 0;
-        -webkit-transform:rotate(360deg);
-        border-style: solid;
-        border-width: 1em 0 1em 2em;
-        border-color: transparent transparent transparent $noir;
-
-    }
-    .pausebutton {
+    #pausebutton {
         z-index: 99;
         display: block;
         top: 25%;
         left: 25%;
-        width: 2.5em;
-        height: 2.5em;
+        width: 2em;
+        height: 2em;
         margin-bottom: 0.313em;
         position: relative;
-        border-style: double;
-        border-width: 1em;
-        border-color: #202020;
+        border-left: 0.8em solid $noir; 
+        border-right: 0.8em solid $noir;
+    }
+    #pausebutton.playbutton {
+        left: 30%;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 2em solid $noir;
+        border-right: 0em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-top: 1em solid transparent;
     }
     
 }
