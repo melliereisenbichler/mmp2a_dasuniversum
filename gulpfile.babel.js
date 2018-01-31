@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var browserify = require('gulp-browserify');
-var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var eslint = require('gulp-eslint');
@@ -55,13 +54,6 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('./build'));
 });
 
-gulp.task('babel', () =>
-	gulp.src('app/js/main.js')
-		.pipe(babel({
-			presets: ['env']
-		}))
-		.pipe(gulp.dest('dist'))
-);
 
 gulp.task('lint', () => {
 	// ESLint ignores files with "node_modules" paths.
