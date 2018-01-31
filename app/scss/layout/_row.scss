@@ -3,60 +3,95 @@
     justify-content: space-between;
     align-items: center;
     width: 75%;
-    height: auto;
-    
+    height: 12em;
     #sonne {
         width: 10em;
         height: 10em;
         background-image: url('../../images/planets/sun.png');
         background-size: cover;
+        &:hover{
+            width: 11em;
+            height:11em;
+        }
     }
     #mercury {
         width: 4.5em;
         height: 4.5em;
         background-image: url('../../images/planets/mercury.png');
         background-size: cover;
+        &:hover{
+                    width: 5.5em;
+                    height: 5.5em;
+                }
     }
     #venus {
         width: 5.1em;
         height: 5.3em;
         background-image: url('../../images/planets/venus.png');
         background-size: cover;
+        &:hover{
+                    width: 6.1em;
+                    height: 6.3em;
+                }
     }
     #earth {
         width: 5.5em;
         height: 5.5em;
         background-image: url('../../images/planets/earth.png');
         background-size: cover;
+        &:hover{
+                    width: 6.5em;
+                    height: 6.5em;
+                }
     }
     #mars {
         width: 5em;
         height: 4.9em;
         background-image: url('../../images/planets/mars.png');
         background-size: cover;
+        &:hover{
+                    width: 6em;
+                    height: 5.9em;
+                }
     }
     #jupiter {
         width: 7.6em;
         height: 7.4em;
         background-image: url('../../images/planets/jupiter.png');
         background-size: cover;
+        &:hover{
+                    width: 8.6em;
+                    height: 8.4em;
+                }
     }
     #saturn {
         width: 9.6em;
         height: 6.9em;
         background-image: url('../../images/planets/saturn.png');
         background-size: cover;
+        &:hover{
+                    width: 10.6em;
+                    height: 7.8em;
+                }
     }
     #uranus {
         width: 6.4em;
         height: 6.2em;
         background-image: url('../../images/planets/uranus.png');
         background-size: cover;
+        &:hover{
+                    width: 7.4em;
+                    height: 7.2em;
+                }
     }
     #neptune {
         width: 5.4em;
         height: 5.3em;
         background-image: url('../../images/planets/neptune.png');
         background-size: cover;
+        &:hover{
+                    width: 5.8em;
+                    height: 5.6em;
+                }
     }     
 }
