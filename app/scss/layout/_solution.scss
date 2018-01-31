@@ -1,0 +1,57 @@
+#question.incorrect{
+    p{
+        border: 2px solid red;
+    }
+}
+#question.correct{
+    p{
+        border: 2px solid limegreen;
+    }
+}
+
+#quiz #questions_content #questions #radios .option-input.radio.incorrect{
+    border: 2px solid red;
+}
+#quiz #questions_content #questions #radios .option-input.radio.correct{
+    border: 2px solid limegreen;
+}
+
+#sol{
+    display: flex;
+    justify-content: space-between !important;
+    margin-bottom: 5em;
+    #score{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.3em;
+        color: $softblanc;
+        p{
+            margin-left: 0.5em;   
+            color: $softblanc;
+            border: 0.15em solid $softblanc;
+            border-radius: 0.2em;
+            padding: 0.3em;
+        }
+    }
+    #done{
+        width: 25%;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        .submit{
+            background: $zodiacpurple;
+            padding: 0.7em 1.2em;
+            border-radius: 0.5em;
+            border: 0em solid $zodiacpurple;
+            box-shadow: 0.15em 0.15em 0.38em $softblanc;
+            font-size: 1.3em;
+            &:hover{
+                font-style: italic;
+                padding: 0.7em 1.15em;
+                cursor: pointer;
+            }
+        }
+    }
+}
