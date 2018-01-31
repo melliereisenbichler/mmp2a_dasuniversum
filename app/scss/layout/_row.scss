@@ -5,8 +5,8 @@
     width: 75%;
     height: 12em;
     #sonne {
-        width: 10em;
-        height: 10em;
+        width: 90%;
+        height: 90%;
         background-image: url('../../images/planets/sun.png');
         background-size: cover;
         &:hover{
@@ -15,8 +15,8 @@
         }
     }
     #mercury {
-        width: 4.5em;
-        height: 4.5em;
+        width: 60%;
+        height: 60%;
         background-image: url('../../images/planets/mercury.png');
         background-size: cover;
         &:hover{
@@ -25,8 +25,8 @@
                 }
     }
     #venus {
-        width: 5.1em;
-        height: 5.3em;
+        width: 65%;
+        height: 65%;
         background-image: url('../../images/planets/venus.png');
         background-size: cover;
         &:hover{
@@ -35,8 +35,8 @@
                 }
     }
     #earth {
-        width: 5.5em;
-        height: 5.5em;
+        width: 80%;
+        height: 80%;
         background-image: url('../../images/planets/earth.png');
         background-size: cover;
         &:hover{
@@ -45,8 +45,8 @@
                 }
     }
     #mars {
-        width: 5em;
-        height: 4.9em;
+        width: 70%;
+        height: 70%;
         background-image: url('../../images/planets/mars.png');
         background-size: cover;
         &:hover{
@@ -55,8 +55,8 @@
                 }
     }
     #jupiter {
-        width: 7.6em;
-        height: 7.4em;
+        width: 95%;
+        height: 95%;
         background-image: url('../../images/planets/jupiter.png');
         background-size: cover;
         &:hover{
@@ -65,8 +65,8 @@
                 }
     }
     #saturn {
-        width: 9.6em;
-        height: 6.9em;
+        width: 95%;
+        height: 95%;
         background-image: url('../../images/planets/saturn.png');
         background-size: cover;
         &:hover{
@@ -75,8 +75,8 @@
                 }
     }
     #uranus {
-        width: 6.4em;
-        height: 6.2em;
+        width: 70%;
+        height: 70%;
         background-image: url('../../images/planets/uranus.png');
         background-size: cover;
         &:hover{
@@ -85,8 +85,8 @@
                 }
     }
     #neptune {
-        width: 5.4em;
-        height: 5.3em;
+        width: 60%;
+        height: 60%;
         background-image: url('../../images/planets/neptune.png');
         background-size: cover;
         &:hover{
