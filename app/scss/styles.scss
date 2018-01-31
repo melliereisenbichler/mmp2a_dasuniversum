@@ -32,6 +32,9 @@
 
 body{
     font-family: Roboto;
+    background: url('../images/star_background.jpg');
+    background-size: cover;
+    
     h1{
         color: $zodiacpurple;
         font-family: Astrolytt;

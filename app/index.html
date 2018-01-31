@@ -13,112 +13,114 @@
             <!--   24th of November 2015   -->
             <!--    All rights reserved    -->
             <nav role="navigation">
-              <div id="menuToggle">
+                <div id="menuToggle">
                 <!--
                 A fake / hidden checkbox is used as click reciever,
                 so you can use the :checked selector on it.
                 -->
-                <input type="checkbox" />
+                    <input type="checkbox" />
 
-                <span></span>
-                <span></span>
-                <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-                <ul id="menu">
-                  <a href="index.html"><li>Universum</li></a>
-                  <a href="planets.html"><li>Planeten</li></a>
-                  <a href="quiz.html"><li>Quiz</li></a>
-                  <a href="sternbilder.html"><li>Sternbilder</li></a>
-                  <a href="info.html"><li>Information</li></a>
-                </ul>
-              </div>
+                    <ul id="menu">
+                        <a href="index.html"><li>Universum</li></a>
+                        <a href="planets.html"><li>Planeten</li></a>
+                        <a href="quiz.html"><li>Quiz</li></a>
+                        <a href="sternbilder.html"><li>Sternbilder</li></a>
+                        <a href="info.html"><li>Information</li></a>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <section id="home">
-        <section id="anim">
-            <section id="opening zoom-large">
-                <div id="universe" class="scale-stretched">
-                  <div id="galaxy">
-                    <div id="solar-system" class="earth">
+            <section id="anim">
+                <section id="opening zoom-large">
+                    <div id="universe" class="scale-stretched">
+                        <div id="galaxy">
+                            <div id="solar-system" class="earth">
 
-                      <div id="mercury" class="orbit">
-                        <div class="pos">
-                          <div class="planet">
-                          </div>
-                        </div>
-                      </div>
+                                <div id="mercury" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">
+                                        </div>
+                                    </div>
+                                </div>
 
-                      <div id="venus" class="orbit">
-                        <div class="pos">
-                          <div class="planet">
-                          </div>
-                        </div>
-                      </div>
+                                <div id="venus" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">
+                                        </div>
+                                    </div>
+                                </div>
 
-                      <div id="earth" class="orbit">
-                        <div class="pos">
-                          <div class="orbit">
-                            <div class="pos">
-                              <div class="moon"></div>
+                                <div id="earth" class="orbit">
+                                    <div class="pos">
+                                        <div class="orbit">
+                                            <div class="pos">
+                                                <div class="moon"></div>
+                                            </div>
+                                        </div>
+                                        <div class="planet">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="mars" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="jupiter" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="saturn" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">
+                                            <div class="ring"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="uranus" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet"> 
+                                            <div class="ring"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="neptune" class="orbit">
+                                    <div class="pos">
+                                        <div class="planet">   
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="sun">
+                                </div>
+
                             </div>
-                          </div>
-                          <div class="planet">
-                          </div>
                         </div>
-                      </div>
-
-                      <div id="mars" class="orbit">
-                        <div class="pos">
-                          <div class="planet">
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="jupiter" class="orbit">
-                        <div class="pos">
-                          <div class="planet">
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="saturn" class="orbit">
-                        <div class="pos">
-                          <div class="planet">
-                            <div class="ring"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="uranus" class="orbit">
-                        <div class="pos">
-                          <div class="planet"> 
-                              <div class="ring"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="neptune" class="orbit">
-                        <div class="pos">
-                          <div class="planet">   
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="sun">
-                      </div>
-
                     </div>
-                  </div>
-                </div>
-              </section>
-        </section>
-        <section id="play">
-            <label class="set_state">
-              <input type="checkbox">
-            </label>
-        </section>
-        
+                </section>
+            </section>
+            <section id="play">
+            <input class="set_state" type="checkbox" />
+
+            <span id="backg"><span id="pausebutton"></span></span>
+
+
+            </section>
+
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -132,16 +134,19 @@
               var body = $("body"),
                   universe = $("#universe"),
                   solarsys = $("#solar-system");
+              var btn = $('#pausebutton');
 
               var init = function() {
                 body.addClass("view-3D")
               };
 
-              $(".set_state").click(function() { body.toggleClass("pause_anim"); });
+              $(".set_state").click(function() { body.toggleClass("pause_anim");
+              btn.toggleClass("playbutton");
+              });
 
               init();
 
-            });    
+            });
         </script>
     </body>
 </html>

@@ -1,10 +1,59 @@
 #play {
-    height: 2em;
     z-index: 25;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: absolute;
     background: none;
+    top: 10em;
+    align-self: center;
+    -webkit-user-select: none;
+    user-select: none;
+    input {
+        display: block;
+        width: 6em;
+        height: 6em;
+        position: absolute;
+        top: -0.5em;
+        left: -0.5em;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 100;
+        -webkit-touch-callout: none;
+    }
+    #backg {
+        z-index: 90;
+        display: block;
+        width: 4em;
+        height: 4em;
+        margin-bottom: 0.313em;
+        position: relative;
+        background: $zodiacpurple;
+        border: 1px solid $zodiacpurple;
+        border-radius: 25%;
+        box-shadow: 0.15em 0.15em 0.38em $softblanc;
+    }
+    #pausebutton {
+        z-index: 99;
+        display: block;
+        top: 25%;
+        left: 25%;
+        width: 2em;
+        height: 2em;
+        margin-bottom: 0.313em;
+        position: relative;
+        border-left: 0.8em solid $noir; 
+        border-right: 0.8em solid $noir;
+    }
+    #pausebutton.playbutton {
+        left: 30%;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 2em solid $noir;
+        border-right: 0em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-top: 1em solid transparent;
+    }
+    
 }
 #home{
     display: flex;
