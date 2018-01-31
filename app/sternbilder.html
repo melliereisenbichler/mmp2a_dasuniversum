@@ -35,12 +35,37 @@
             </nav>
         </header>
         
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li class="active">Data</li>
+        </ol>
+        
+        <script>
+            var path = "";
+            var href = document.location.href;
+            var s = href.split("/");
+            for (var i=2;i<(s.length-1);i++) {
+            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+            }
+            i=s.length-1;
+            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+            var url = window.location.protocol + "//" + path;
+            document.writeln(url);
+            //-->
+        </script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script type="text/javascript">
             if (typeof jQuery == 'undefined') { 
             document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
             }
+            
+            $(document).ready(function () {
+    breadcrumbStateSaver(document.title, document.location.href);
+    showBreadCrumb();
+});
         </script>
     </body>
 </html>
