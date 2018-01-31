@@ -7,6 +7,7 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var eslint = require('gulp-eslint');
+var rename = require('gulp-rename');
 
 /* -------------------------- */
 
@@ -48,6 +49,9 @@ gulp.task('scripts', function() {
 			insertGlobals : true,
 			debug : !gulp.env.production
 		}))
+		.pipe(rename(function (path) {
+			path.basename = 'bundle';
+		  }))
 		.pipe(gulp.dest('./build'));
 });
 
