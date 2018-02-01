@@ -1,17 +1,17 @@
 #planetrow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 75%;
-    height: 12em;
+    width: 90%;
     #sonne {
         width: 90%;
         height: 90%;
         background-image: url('../../images/planets/sun.png');
         background-size: cover;
         &:hover{
-            width: 11em;
-            height:11em;
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
         }
     }
     #mercury {
@@ -20,9 +20,10 @@
         background-image: url('../../images/planets/mercury.png');
         background-size: cover;
         &:hover{
-                    width: 5.5em;
-                    height: 5.5em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #venus {
         width: 65%;
@@ -30,9 +31,10 @@
         background-image: url('../../images/planets/venus.png');
         background-size: cover;
         &:hover{
-                    width: 6.1em;
-                    height: 6.3em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #earth {
         width: 80%;
@@ -40,9 +42,10 @@
         background-image: url('../../images/planets/earth.png');
         background-size: cover;
         &:hover{
-                    width: 6.5em;
-                    height: 6.5em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #mars {
         width: 70%;
@@ -50,9 +53,10 @@
         background-image: url('../../images/planets/mars.png');
         background-size: cover;
         &:hover{
-                    width: 6em;
-                    height: 5.9em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #jupiter {
         width: 95%;
@@ -60,9 +64,10 @@
         background-image: url('../../images/planets/jupiter.png');
         background-size: cover;
         &:hover{
-                    width: 8.6em;
-                    height: 8.4em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #saturn {
         width: 95%;
@@ -70,9 +75,13 @@
         background-image: url('../../images/planets/saturn.png');
         background-size: cover;
         &:hover{
-                    width: 10.6em;
-                    height: 7.8em;
-                }
+            border-top-left-radius: 10%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 10%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #uranus {
         width: 70%;
@@ -80,9 +89,13 @@
         background-image: url('../../images/planets/uranus.png');
         background-size: cover;
         &:hover{
-                    width: 7.4em;
-                    height: 7.2em;
-                }
+            border-top-left-radius: 50%;
+            border-top-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 50%;
+            box-shadow: 0 0 4em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }
     #neptune {
         width: 60%;
@@ -90,8 +103,9 @@
         background-image: url('../../images/planets/neptune.png');
         background-size: cover;
         &:hover{
-                    width: 5.8em;
-                    height: 5.6em;
-                }
+            border-radius: 50%;
+            box-shadow: 0 0 6em $softblanc;
+            background-color: rgba($softblanc, 0.4);
+        }
     }     
 }
