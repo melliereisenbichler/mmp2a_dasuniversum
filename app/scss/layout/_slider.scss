@@ -4,27 +4,11 @@
   }
 
   #slider {
-    width: 60%;
+    width: 80%;
     height: 0.5em;
-    margin-top: 8em;
+      margin-top: 2.5em;
     text-align: center;
     line-height: 1.2em;
-    z-index: 1;
-    opacity: 1;
-      #marks{
-        margin-top: -1.5%;
-        position: absolute;
-        z-index: -1 !important;
-        background-color: transparent;
-        height: 2em;
-        width: 100%;
-        span{
-            position: absolute;
-            width: 0.5em;
-            height: 100%;
-            background: $softblanc;
-        }
-    }
   }
   
   .ui-slider .ui-slider-handle {
@@ -56,10 +40,46 @@
     cursor: pointer;
   }
 
+	.ui-slider-horizontal.ui-slider-pips .ui-slider-line {
+	    top: -2.8em;
+        height: 3em;
+        width: 1em;
+        background: $softblanc;
+        border-radius: 5em;
+	}
+	.ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(10) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(11) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(5) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(6) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(7) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(9) .ui-slider-line {
+	    width: 0;
+	}
+    .ui-slider-horizontal.ui-slider-pips .ui-slider-pip:nth-child(12) .ui-slider-line {
+	    width: 0;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+	    z-index: 1;
+	}
+	.ui-slider-horizontal.ui-slider-pips {
+	    margin-right: 0;
+	}
+
+
 #cont{
     margin-top: 2em;
     width: 100%;
-    height: 50%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +89,6 @@
         align-items: center;
         img{    
             display: none;
-            margin-top: 2em;
             margin-bottom: 2em;
         }
         #MERKUR {
@@ -110,5 +129,5 @@
     background: $softblanc2;
     padding: 2em;
     border-radius: 0.5em;
-    
+    color: $noir;
 }
