@@ -9,22 +9,39 @@
     </head>
     <body>
         <script>
+            function GetURLParameter(sParam)
+            {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++)
+                {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == sParam)
+                    {
+                        return sParameterName[1];
+                    }
+                }
+            }
+
             
             var data;
             
             $.getJSON("planets.json", function JSONdata(json) {
                 data = json; 
                 console.log(data[0].name);
-                document.getElementById('planetname').innerHTML=data[0].name;
+                var index = GetURLParameter('planet');
+                document.getElementById('planetname').innerHTML=data[index].name; 
+                var facts = data[index].facts;
                 
-                document.getElementById('fact').innerHTML=data[0].facts;
+                console.log(facts);
+                
             
             });
             
         </script>
         
         <header>
-            <h1>brotkrümeli</h1>
+            <h1>Planet</h1>
 
             <!--    Made by Erik Terwan    -->
             <!--   24th of November 2015   -->
@@ -79,7 +96,7 @@
                 <a href="#"><img id="neptune" src="images/planets/neptune.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
             </section>
             <section id="hero">
-                <h1 id="planetname"></h1>
+                <h2 id="planetname"></h2>
                 <div id="p_img"></div>
             </section>
             <section id="main_cont">
