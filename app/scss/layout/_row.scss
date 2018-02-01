@@ -109,3 +109,45 @@
         }
     }     
 }
+
+
+
+
+#planetrow{
+    a {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    a .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $softblanc2;
+        color: $noir;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    a .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent $softblanc2 transparent;
+    }
+
+    a:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+}
