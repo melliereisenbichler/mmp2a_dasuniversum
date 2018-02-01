@@ -25,35 +25,30 @@
                 <span></span>
 
                 <ul id="menu">
-                  <a href="index.html"><li>Universum</li></a>
-                  <a href="planets.html"><li>Planeten</li></a>
-                  <a href="quiz.html"><li>Quiz</li></a>
-                  <a href="sternbilder.html"><li>Sternbilder</li></a>
-                  <a href="info.html"><li>Information</li></a>
+                    <a href="index.html">
+                        <img src="images/universe.png" alt="Universum">
+                        <li>Universum</li>
+                    </a>
+                    <a href="planets.html">
+                        <img src="images/planets.png" alt="Planeten">
+                        <li>Planeten</li>
+                    </a>
+                    <a href="quiz.html">
+                        <img src="images/quiz.png" alt="Quiz">
+                        <li>Quiz</li>
+                    </a>
+                    <a href="sternbilder.html">
+                        <img src="images/sternbilder.png" alt="Sternbilder">
+                        <li>Sternbilder</li>
+                    </a>
+                    <a href="info.html">
+                        <img src="images/information.png" alt="Information">
+                        <li>Information</li>
+                    </a>
                 </ul>
               </div>
             </nav>
         </header>
-        
-        <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Library</a></li>
-          <li class="active">Data</li>
-        </ol>
-        
-        <script>
-            var path = "";
-            var href = document.location.href;
-            var s = href.split("/");
-            for (var i=2;i<(s.length-1);i++) {
-            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
-            }
-            i=s.length-1;
-            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
-            var url = window.location.protocol + "//" + path;
-            document.writeln(url);
-            //-->
-        </script>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
