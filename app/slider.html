@@ -11,7 +11,16 @@
 </head>
 <body>
     <section id="slide">
-        <div id="slider"></div>
+        
+        <div id="slider">
+            <section id="marks">
+                <span id="m1"></span>
+                <span id="m2"></span>
+                <span id="m3"></span>
+                <span id="m4"></span>
+                <span id="m5"></span>
+            </section>
+        </div>
     </section>
 
     <section id="cont">
@@ -48,7 +57,14 @@
         
     $('#slider').slider({
         change: function(event, ui) { 
-            if(ui.value <= 2)
+            if(ui.value == 0)
+                {
+                    hide_image('ALL');
+                    $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent"></div>');
+                    $('#compare span').text('Um wie viel größer/kleiner ist die Erde?');
+                }
+            
+            if(ui.value == 2)
                 {
                     hide_image('MERKUR');
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">1/2</div>');
@@ -63,9 +79,11 @@
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">1</div>');
                     $('#compare span').text('Die Venus ist beinahe so groß wie die Erde. Sie ist nur ein klitzeleines-bisschen kleiner - in Planetengröße.');
                 }
-            if(ui.value == 6)
-                {
+            if(ui.value == 6 || ui.value == 8 || ui.value == 10)
+                {   
+                    hide_image('ALL');
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent"></div>');
+                    $('#compare span').text('Um wie viel größer/kleiner ist die Erde?');
                     
                 }
                 
@@ -75,9 +93,11 @@
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">3</div>');
                     $('#compare span').text('Uranus und Neptun sind ungefähr 3 Mal so groß wie die Erde.');
                 }
-            if(ui.value == 14)
+            if(ui.value == 14 || ui.value == 16 || ui.value == 18 || ui.value == 20)
                 {
+                    hide_image('ALL');
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent"></div>');
+                    $('#compare span').text('Um wie viel größer/kleiner ist die Erde?');
                 }
             if(ui.value == 22)
                 {
@@ -91,6 +111,12 @@
                     hide_image('JUPITER');
                     $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent">11</div>');
                     $('#compare span').text('Jupiter ist der größte Planet in unserem Sonnensystem. Er ist 11 Mal so groß wie die Erde!');
+                }
+            if(ui.value == 26)
+                {
+                    hide_image('ALL');
+                    $(this).find('.ui-slider-handle').html('<div class="sliderControl-label v-labelCurrent"></div>');
+                    $('#compare span').text('Um wie viel größer/kleiner ist die Erde?');
                 }
                 
         } 
@@ -150,6 +176,17 @@
             $("#ERDE").show();
             $("#MARS").hide();
             $("#JUPITER").show();
+            $("#SATURN").hide();
+            $("#NEPTUN").hide();
+            $("#URANUS").hide();
+        }
+        if(id =='ALL'){
+            $("#SONNE").hide();
+            $("#MERKUR").hide();
+            $("#VENUS").hide();
+            $("#ERDE").hide();
+            $("#MARS").hide();
+            $("#JUPITER").hide();
             $("#SATURN").hide();
             $("#NEPTUN").hide();
             $("#URANUS").hide();
