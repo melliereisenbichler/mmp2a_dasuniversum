@@ -2,13 +2,29 @@
     display: flex;
     justify-content: center;
   }
-  
+
   #slider {
     width: 60%;
     height: 0.5em;
     margin-top: 8em;
     text-align: center;
     line-height: 1.2em;
+    z-index: 1;
+    opacity: 1;
+      #marks{
+        margin-top: -1.5%;
+        position: absolute;
+        z-index: -1 !important;
+        background-color: transparent;
+        height: 2em;
+        width: 100%;
+        span{
+            position: absolute;
+            width: 0.5em;
+            height: 100%;
+            background: $softblanc;
+        }
+    }
   }
   
   .ui-slider .ui-slider-handle {
@@ -91,10 +107,8 @@
     text-align: center;
     width: 65%;
     height: auto;
-    background: $softblanc;
-    opacity: 0.85;
+    background: $softblanc2;
     padding: 2em;
-    border: 0.1em solid $softblanc;
     border-radius: 0.5em;
     
 }
