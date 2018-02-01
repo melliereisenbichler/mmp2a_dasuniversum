@@ -382,6 +382,16 @@ table {
     font-size: 1.5em;
       #tooltiptext {
         opacity: 0;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+          }
           &:hover{
               opacity: 1;
           }
