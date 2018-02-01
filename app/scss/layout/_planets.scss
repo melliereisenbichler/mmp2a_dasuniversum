@@ -39,6 +39,7 @@
                 color: $softblanc;
                 font-family: Astrolytt;
                 font-style: normal;
+                margin-top: 0.3em;
                 &:hover {
                     color: $cosmicblue;
                     font-style: italic;
@@ -49,10 +50,10 @@
             height: 10em;
             width: 8em;
             img{
-                width: 9em;
+                width: 10em;
                 height: 7em;
                 &:hover{
-                    width: 10em;
+                    width: 11em;
                     height: 8em;
                 }
             }
@@ -81,12 +82,6 @@
         margin-top: 5em;
         padding-top: 2em;
         border-top: 0.1em solid $softblanc2;
-        h2 {
-            font-family: Astrolytt;
-            margin-top: 1.5em;
-            margin-bottom: 2em;
-            font-size: 2em;
-            color: $zodiacpurple;
-        }
+        
     }
 }

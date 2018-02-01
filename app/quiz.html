@@ -64,7 +64,7 @@
         
         <section id="quiz">
             <section id="headings">
-                <h2>Teste dein Wissen</h2>
+                <h2 id="head">Teste dein Wissen</h2>
                 <section id="truefalse">
                     <h2>Wahr</h2>
                     <h2>Falsch</h2>
@@ -193,11 +193,14 @@
                 //make score-section visible
                 document.getElementById("score").style.visibility = "visible";
             
+                document.getElementById("head").innerHTML = "Auflösung";
+
             }
             
             function hide_button(){
                 document.getElementById("sub").style.visibility = "hidden";
                 document.getElementById("sub2").style.visibility = "visible";
+                
             }
     
         </script>
