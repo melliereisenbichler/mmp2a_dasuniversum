@@ -2754,9 +2754,7 @@ table {
       margin-bottom: 0.5em; }
     #content #hero #p_img {
       width: 5em;
-      height: 5em;
-      background-image: url("../../images/planets/earth.png");
-      background-size: cover; }
+      height: auto; }
   #content #main_cont {
     display: flex;
     flex-direction: row;
@@ -2905,6 +2903,39 @@ table {
       border-radius: 50%;
       box-shadow: 0 0 6em #f6f6f6;
       background-color: rgba(246, 246, 246, 0.4); }
+
+#planetrow a {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; }
+
+#planetrow a .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(239, 239, 239, 0.85);
+  color: #333333;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; }
+
+#planetrow a .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(239, 239, 239, 0.85) transparent; }
+
+#planetrow a:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
 
 #theplanets {
   display: flex;
@@ -3177,3 +3208,13 @@ body {
     color: #c0b2ee; }
   body p {
     color: #333333; }
+  body #sternbild_cont img {
+    border: 0.08em solid #f6f6f6 !important;
+    border-radius: 0.7em;
+    width: auto !important; }
+    body #sternbild_cont img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(3); }
+  body #sternbild_cont h2 {
+    margin: 1em 0 !important; }

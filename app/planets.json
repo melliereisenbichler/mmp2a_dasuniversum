@@ -1,5 +1,10 @@
 [
-    {"name": "Sonne", "facts": [ "jkashf", "jakf"]},
+    {   "name": "Sonne", 
+        "pic": "images\/planets\/sun.png",
+        "facts": [ "jkashf", "jakf"], 
+        "images": ["images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
     {"name": "Merkur", "facts": "AF"},
     {"name": "Venus", "facts": "AX"},
     {"name": "Erde", "facts": "AL"},
