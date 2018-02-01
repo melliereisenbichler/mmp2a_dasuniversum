@@ -152,24 +152,8 @@
             document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
             }
         </script>
-        <script>
-            $(window).load(function(){
-              var body = $("body"),
-                  universe = $("#universe"),
-                  solarsys = $("#solar-system");
-              var btn = $('#pausebutton');
-
-              var init = function() {
-                body.addClass("view-3D")
-              };
-
-              $(".set_state").click(function() { body.toggleClass("pause_anim");
-              btn.toggleClass("playbutton");
-              });
-
-              init();
-
-            });
+        <script src="js/universe.js">
+            
         </script>
     </body>
 </html>
