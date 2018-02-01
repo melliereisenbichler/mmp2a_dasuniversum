@@ -1,16 +1,85 @@
 [
     {   "name": "Sonne", 
         "pic": "images\/planets\/sun.png",
-        "facts": [ "jkashf", "jakf"], 
-        "images": ["images\/planets\/sun.png", 
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
             "images\/planets\/mercury.png", 
             "images\/planets\/jupiter.png"]},
-    {"name": "Merkur", "facts": "AF"},
-    {"name": "Venus", "facts": "AX"},
-    {"name": "Erde", "facts": "AL"},
-    {"name": "Mars", "facts": "DZ"},
-    {"name": "Jupiter", "facts": "AS"},
-    {"name": "Saturn", "facts": "AD"},
-    {"name": "Uranus", "facts": "AO"},
-    {"name": "Neptun", "facts": "AI"}
+
+
+    {   "name": "Merkur",
+        "pic": "images\/planets\/mercury.png",
+        "facts": [],         
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Venus", 
+        "pic": "images\/planets\/venus.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Erde", 
+        "pic": "images\/planets\/earth.png",
+        "facts": [ 
+        "Die Oberfläche der Erde besteht großteils aus Wasser (70%).", 
+        "Die Erde wird von der Atmosphäre umhüllt. Sie ist wie ein Mantel aus Gasen. Sie gibt uns Sauerstoff zum Atmen und beeinflusst unser Wetter.",
+        "Die Erde ist der einzige Planet in unserem Sonnensystem, wo sich Leben entwickeln kann.",
+        "Ein Jahr hat 365 Tage. So lange braucht die Erde, um die Sonne ein Mal zu umkreisen.",
+        "Siehe unser super freshes Sonnensystem, es ist lit vong der nicigkeit her"],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+    {   "name": "Mars", 
+        "pic": "images\/planets\/mars.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Jupiter", 
+        "pic": "images\/planets\/jupiter.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Saturn", 
+        "pic": "images\/planets\/saturn.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Uranus", 
+        "pic": "images\/planets\/uranus.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]},
+
+
+    {   "name": "Neptun", 
+        "pic": "images\/planets\/neptune.png",
+        "facts": [],
+        "images": [
+            "images\/planets\/sun.png", 
+            "images\/planets\/mercury.png", 
+            "images\/planets\/jupiter.png"]}
 ]
