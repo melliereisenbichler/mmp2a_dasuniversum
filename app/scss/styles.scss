@@ -49,7 +49,59 @@ body{
         color: $noir;
     }
     
-    #TEST{
-        background: green;
-    }
+
+    
+}
+ #TESTME{
+     background: $noir;
+     display: flex;
+     flex-direction: column;
+    
+     p{
+         color: $softblanc;
+     }
+     #TEST{
+
+         display: flex;
+         justify-content: center;
+
+         #radios{
+            width: 25%;
+            #radio{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p{
+                    background: $softblanc2;
+                }
+                
+                .option-input {
+                    height: 40px;
+                    width: 40px;
+                    
+                    
+                    &.rad {
+                        border-radius: 50%;
+                        &::after {
+                          border-radius: 50%;
+                        }
+                    }
+                }
+                .correct {
+                    background: $cosmicblue;
+                    &::before {
+                        height: 40px;
+                        width: 40px;
+                        content: '✔';
+                        display: inline-block;
+                        font-size: 1.5em;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        
+     }
 }
