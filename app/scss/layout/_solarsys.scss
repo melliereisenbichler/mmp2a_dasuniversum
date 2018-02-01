@@ -88,7 +88,7 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 0.2em solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   transform-style: preserve-3d;
   animation-name: orbit;
@@ -380,13 +380,31 @@ table {
   }
   #mercury .planet {
     font-size: 1.5em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #venus .planet {
     font-size: 3.72em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #earth {
     .planet {
       font-size: 3.92em;
+        #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
     }
     .moon {
       font-size: 1.2em;
@@ -394,18 +412,48 @@ table {
   }
   #mars .planet {
     font-size: 2.9em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #jupiter .planet {
     font-size: 12em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #saturn .planet {
     font-size: 10.8em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #uranus .planet {
     font-size: 4.68em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
   #neptune .planet {
     font-size: 4.9em;
+      #tooltiptext {
+        opacity: 0;
+          &:hover{
+              opacity: 1;
+          }
+      }
   }
 }
 
@@ -1137,7 +1185,7 @@ table {
     background-image: url('../../images/planeten/erde.png');
   }
   .moon {
-    background-color: white;
+    background-color: lightgray;
   }
 }
 
