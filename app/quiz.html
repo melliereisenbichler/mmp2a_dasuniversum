@@ -74,66 +74,66 @@
             <section id="questions_content">
                 <section id="questions">
                     <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                        <p id="q1">Hallo ich bin eine Frage!</p>
                     </section>
                     <section id="radios">
                         <label>
-                            <input type="radio" class="option-input radio" name="group1" checked />
+                            <input type="radio" class="option-input radio" name="group1" id ="1" value="correct" checked />
                         </label>
                         <label>
-                            <input type="radio" class="option-input radio" name="group1" />
+                            <input type="radio" class="option-input radio" name="group1" id ="2"/>
                         </label>
                     </section>
                 </section>
                 <section id="questions">
                     <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                        <p id="q2">Hallo ich bin eine Frage!</p>
                     </section>
                     <section id="radios">
                        <label>
-                            <input type="radio" class="option-input radio" name="group2" checked />
+                            <input type="radio" class="option-input radio" name="group2" id ="3" />
                         </label>
                         <label>
-                            <input type="radio" class="option-input radio" name="group2" />
+                            <input type="radio" class="option-input radio" name="group2" id ="4" value="correct" checked/>
                         </label>
                     </section>
                 </section>
-                <section id="questions">
+                <section id="questions" class="3">
                     <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                        <p id="q3">Hallo ich bin eine Frage!</p>
                     </section>
                     <section id="radios">
                        <label>
-                            <input type="radio" class="option-input radio" name="group3" checked />
+                            <input type="radio" class="option-input radio" name="group3" id ="5" value="correct" checked />
                         </label>
                         <label>
-                            <input type="radio" class="option-input radio" name="group3" />
-                        </label>
-                    </section>
-                </section>
-                <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
-                    </section>
-                    <section id="radios">
-                        <label>
-                            <input type="radio" class="option-input radio" name="group4" checked />
-                        </label>
-                        <label>
-                            <input type="radio" class="option-input radio" name="group4" />
+                            <input type="radio" class="option-input radio" name="group3" id ="6"/>
                         </label>
                     </section>
                 </section>
-                <section id="questions">
+                <section id="questions" class="4">
                     <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                        <p id="q4">Hallo ich bin eine Frage!</p>
                     </section>
                     <section id="radios">
                         <label>
-                            <input type="radio" class="option-input radio" name="group5" checked />
+                            <input type="radio" class="option-input radio" name="group4" id ="7" />
                         </label>
                         <label>
-                            <input type="radio" class="option-input radio" name="group5" />
+                            <input type="radio" class="option-input radio" name="group4" id ="8" value="correct" checked/>
+                        </label>
+                    </section>
+                </section>
+                <section id="questions" class="5">
+                    <section id="question">
+                        <p id="q5">Hallo ich bin eine Frage!</p>
+                    </section>
+                    <section id="radios">
+                        <label>
+                            <input type="radio" class="option-input radio" name="group5" id ="9"/>
+                        </label>
+                        <label>
+                            <input type="radio" class="option-input radio" name="group5" id ="10" value="correct" checked/>
                         </label>
                     </section>
                 </section>
@@ -141,9 +141,14 @@
             </section>
             
             <section id="submit">
-                <section id="done">
-                    <button onclick="window.location.href='/solution.html'"class="submit">Fertig</button>
+                <section id="score">
+                    Score: <p id="addstuff"></p>
                 </section>
+                <section id="done">
+                    <button onclick="solution(); hide_button();" class="submit" type="submit" id="sub">Fertig</button>
+                    
+                    <button onclick="window.location.href='/quiz.html'"class="submit" id="sub2">Erneut versuchen</button>
+                    </section>
             </section>   
         </section>
         
@@ -156,6 +161,45 @@
             if (typeof jQuery == 'undefined') { 
             document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
             }
+            
+            function solution(){ 
+                //calculate correct score
+                var correctAnswers = 0;          
+                for(var i = 1; i <= 5; i++) {
+                    var question =  document.getElementById('q'+i);
+                    var radios = document.getElementsByName('group'+i);
+                    for(var j = 0; j < radios.length; j++) {
+                        var radio = radios[j];
+                        if(radio.value == "correct" && radio.checked) {
+                            correctAnswers++;
+                            radio.style.border = "2px solid #039403";
+                            question.style.border = "2px solid #039403";
+                        }
+                        if(radio.value != "correct" && radio.checked) {
+                            radio.style.border = "2px solid red";
+                            question.style.border = "2px solid red";
+                        }
+                         //disable all not-checked answers
+                        if(radio.checked == false){
+                            radio.disabled = true;
+                        }
+                    }
+                }                   
+                console.log("Correct Responses: " + correctAnswers);
+                //add correct store to that paragraph
+                var p = document.getElementById("addstuff");
+                var score = correctAnswers + "/5";
+                p.innerHTML += score;
+                //make score-section visible
+                document.getElementById("score").style.visibility = "visible";
+            
+            }
+            
+            function hide_button(){
+                document.getElementById("sub").style.visibility = "hidden";
+                document.getElementById("sub2").style.visibility = "visible";
+            }
+    
         </script>
     </body>
 </html>

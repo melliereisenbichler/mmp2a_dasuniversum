@@ -8,8 +8,6 @@
         
     }
 }
-
-
 #quiz{
     display: flex;
     flex-direction: column;
@@ -158,13 +156,29 @@
     }
     #submit{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between !important;
         margin-bottom: 5em;
+        #score{
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.3em;
+            color: $softblanc;
+            visibility: hidden;
+            p{
+                margin-left: 0.5em;   
+                color: $softblanc;
+                border: 0.15em solid $softblanc;
+                border-radius: 0.2em;
+                padding: 0.3em;
+            }
+        }
         #done{
             width: 25%;
             display: inherit;
             justify-content: center;
+            align-items: center;
             .submit{
                 background: $zodiacpurple;
                 padding: 0.7em 1.2em;
@@ -177,6 +191,9 @@
                     padding: 0.7em 1.15em;
                     cursor: pointer;
                 }
+            }
+            #sub2{
+                visibility: hidden;
             }
         }
     }
