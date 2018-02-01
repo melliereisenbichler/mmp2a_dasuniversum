@@ -1,0 +1,10 @@
+[
+    {"name": "Merkur", "facts": "AF"},
+    {"name": "Venus", "facts": "AX"},
+    {"name": "Erde", "facts": "AL"},
+    {"name": "Mars", "facts": "DZ"},
+    {"name": "Jupiter", "facts": "AS"},
+    {"name": "Saturn", "facts": "AD"},
+    {"name": "Uranus", "facts": "AO"},
+    {"name": "Neptun", "facts": "AI"}
+]
