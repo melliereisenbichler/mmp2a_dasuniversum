@@ -2722,9 +2722,12 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+<<<<<<< HEAD
   #info img {
     width: 20%;
     margin: 1em 0; }
+=======
+>>>>>>> 69bf749c5d5e4f5652a8b95ccf0c9f7f30b1d1e6
   #info #cont {
     flex-direction: column;
     justify-content: center;
@@ -2939,8 +2942,12 @@ table {
       #theplanets #allplanets .planet_cont h2 {
         color: #f6f6f6;
         font-family: Astrolytt;
+<<<<<<< HEAD
         font-style: normal;
         margin-top: 0.3em; }
+=======
+        font-style: normal; }
+>>>>>>> 69bf749c5d5e4f5652a8b95ccf0c9f7f30b1d1e6
         #theplanets #allplanets .planet_cont h2:hover {
           color: #78d6f8;
           font-style: italic; }
@@ -2948,10 +2955,17 @@ table {
       height: 10em;
       width: 8em; }
       #theplanets #allplanets .saturn img {
+<<<<<<< HEAD
         width: 10em;
         height: 7em; }
         #theplanets #allplanets .saturn img:hover {
           width: 11em;
+=======
+        width: 9em;
+        height: 7em; }
+        #theplanets #allplanets .saturn img:hover {
+          width: 10em;
+>>>>>>> 69bf749c5d5e4f5652a8b95ccf0c9f7f30b1d1e6
           height: 8em; }
       #theplanets #allplanets .saturn h2 {
         text-align: center; }
@@ -2972,6 +2986,15 @@ table {
     margin-top: 5em;
     padding-top: 2em;
     border-top: 0.1em solid rgba(239, 239, 239, 0.85); }
+<<<<<<< HEAD
+=======
+    #theplanets #regler h2 {
+      font-family: Astrolytt;
+      margin-top: 1.5em;
+      margin-bottom: 2em;
+      font-size: 2em;
+      color: #c0b2ee; }
+>>>>>>> 69bf749c5d5e4f5652a8b95ccf0c9f7f30b1d1e6
 
 #planetrow {
   margin-left: auto;
@@ -3153,6 +3176,7 @@ body {
     font-family: Astrolytt;
     top: 3.125em !important;
     height: 100%;
+<<<<<<< HEAD
     padding-top: 0;
     /*padding-left: 1.4em;*/
     text-align: center;
@@ -3163,5 +3187,10 @@ body {
     margin-bottom: 2em;
     font-size: 2em;
     color: #c0b2ee; }
+=======
+    padding-top: 0.7em;
+    /*padding-left: 1.4em;*/
+    text-align: center; }
+>>>>>>> 69bf749c5d5e4f5652a8b95ccf0c9f7f30b1d1e6
   body p {
     color: #333333; }
