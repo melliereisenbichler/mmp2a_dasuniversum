@@ -75,9 +75,18 @@
     }
     #regler{
         width: 80%;
+        height: 55em;
         text-align: center;
-        background: lightcoral;
         color: $softblanc;
-        padding: 2em;
+        margin-top: 5em;
+        padding-top: 2em;
+        border-top: 0.1em solid $softblanc2;
+        h2 {
+            font-family: Astrolytt;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            font-size: 2em;
+            color: $zodiacpurple;
+        }
     }
 }
