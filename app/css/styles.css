@@ -2531,50 +2531,32 @@ table {
   cursor: pointer; }
 
 #cont {
-  margin-top: 2em;
   width: 100%;
   height: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #cont #imgs {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #cont #imgs img {
-      display: none;
-      margin-top: 2em;
-      margin-bottom: 2em; }
-    #cont #imgs #MERKUR {
-      width: 1.5em; }
-    #cont #imgs #VENUS {
-      width: 4.75em; }
-    #cont #imgs #ERDE {
-      width: 5em; }
-    #cont #imgs #MARS {
-      width: 2.5em; }
-    #cont #imgs #JUPITER {
-      width: 30em; }
-    #cont #imgs #SATURN {
-      width: 25em; }
-    #cont #imgs #URANUS {
-      width: 18em; }
-    #cont #imgs #NEPTUN {
-      width: 18em; }
-
-#compare {
-  margin-top: 1em;
-  padding: 2em;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  width: 65%;
-  height: auto;
-  background: #f6f6f6;
-  opacity: 0.85;
-  padding: 2em;
-  border: 0.1em solid #f6f6f6;
-  border-radius: 0.5em; }
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+  #cont img {
+    display: none;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  #cont #MERKUR {
+    width: 1.5em; }
+  #cont #VENUS {
+    width: 4.75em; }
+  #cont #ERDE {
+    width: 5em; }
+  #cont #MARS {
+    width: 2.5em; }
+  #cont #JUPITER {
+    width: 30em; }
+  #cont #SATURN {
+    width: 25em; }
+  #cont #URANUS {
+    width: 18em; }
+  #cont #NEPTUN {
+    width: 18em; }
 
 #play {
   z-index: 25;
@@ -2733,72 +2715,72 @@ table {
   width: 75%;
   height: 12em; }
   #planetrow #sonne {
-    width: 10em;
-    height: 10em;
+    width: 90%;
+    height: 90%;
     background-image: url("../../images/planets/sun.png");
     background-size: cover; }
     #planetrow #sonne:hover {
       width: 11em;
       height: 11em; }
   #planetrow #mercury {
-    width: 4.5em;
-    height: 4.5em;
+    width: 60%;
+    height: 60%;
     background-image: url("../../images/planets/mercury.png");
     background-size: cover; }
     #planetrow #mercury:hover {
       width: 5.5em;
       height: 5.5em; }
   #planetrow #venus {
-    width: 5.1em;
-    height: 5.3em;
+    width: 65%;
+    height: 65%;
     background-image: url("../../images/planets/venus.png");
     background-size: cover; }
     #planetrow #venus:hover {
       width: 6.1em;
       height: 6.3em; }
   #planetrow #earth {
-    width: 5.5em;
-    height: 5.5em;
+    width: 80%;
+    height: 80%;
     background-image: url("../../images/planets/earth.png");
     background-size: cover; }
     #planetrow #earth:hover {
       width: 6.5em;
       height: 6.5em; }
   #planetrow #mars {
-    width: 5em;
-    height: 4.9em;
+    width: 70%;
+    height: 70%;
     background-image: url("../../images/planets/mars.png");
     background-size: cover; }
     #planetrow #mars:hover {
       width: 6em;
       height: 5.9em; }
   #planetrow #jupiter {
-    width: 7.6em;
-    height: 7.4em;
+    width: 95%;
+    height: 95%;
     background-image: url("../../images/planets/jupiter.png");
     background-size: cover; }
     #planetrow #jupiter:hover {
       width: 8.6em;
       height: 8.4em; }
   #planetrow #saturn {
-    width: 9.6em;
-    height: 6.9em;
+    width: 95%;
+    height: 95%;
     background-image: url("../../images/planets/saturn.png");
     background-size: cover; }
     #planetrow #saturn:hover {
       width: 10.6em;
       height: 7.8em; }
   #planetrow #uranus {
-    width: 6.4em;
-    height: 6.2em;
+    width: 70%;
+    height: 70%;
     background-image: url("../../images/planets/uranus.png");
     background-size: cover; }
     #planetrow #uranus:hover {
       width: 7.4em;
       height: 7.2em; }
   #planetrow #neptune {
-    width: 5.4em;
-    height: 5.3em;
+    width: 60%;
+    height: 60%;
     background-image: url("../../images/planets/neptune.png");
     background-size: cover; }
     #planetrow #neptune:hover {
@@ -2873,6 +2855,8 @@ table {
 #planetrow {
   margin-left: auto;
   margin-right: auto; }
+  #planetrow a img {
+    width: auto; }
 
 #quiz {
   display: flex;
