@@ -1,10 +1,13 @@
 #info{
-
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-align-items: center;
+    align-items: center;
+    img{
+        width: 20%;
+        margin: 1em 0;
+    }
     #cont{
         flex-direction: column;
         justify-content: center;
