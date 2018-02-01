@@ -1530,6 +1530,10 @@ a {
   a:hover {
     color: #78d6f8;
     font-style: italic; }
+  a:visited {
+    color: #333333; }
+  a:visited:hover {
+    color: #78d6f8; }
 
 #menuToggle {
   display: block;
@@ -2993,7 +2997,54 @@ table {
         font-size: 1.3em; }
         #quiz #submit #done .submit:hover {
           font-style: italic;
-          padding: 0.7em 1.15em; }
+          padding: 0.7em 1.15em;
+          cursor: pointer; }
+
+#question.incorrect p {
+  border: 2px solid red; }
+
+#question.correct p {
+  border: 2px solid limegreen; }
+
+#quiz #questions_content #questions #radios .option-input.radio.incorrect {
+  border: 2px solid red; }
+
+#quiz #questions_content #questions #radios .option-input.radio.correct {
+  border: 2px solid limegreen; }
+
+#sol {
+  display: flex;
+  justify-content: space-between !important;
+  margin-bottom: 5em; }
+  #sol #score {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.3em;
+    color: #f6f6f6; }
+    #sol #score p {
+      margin-left: 0.5em;
+      color: #f6f6f6;
+      border: 0.15em solid #f6f6f6;
+      border-radius: 0.2em;
+      padding: 0.3em; }
+  #sol #done {
+    width: 25%;
+    display: inherit;
+    justify-content: center;
+    align-items: center; }
+    #sol #done .submit {
+      background: #c0b2ee;
+      padding: 0.7em 1.2em;
+      border-radius: 0.5em;
+      border: 0em solid #c0b2ee;
+      box-shadow: 0.15em 0.15em 0.38em #f6f6f6;
+      font-size: 1.3em; }
+      #sol #done .submit:hover {
+        font-style: italic;
+        padding: 0.7em 1.15em;
+        cursor: pointer; }
 
 @font-face {
   font-family: "ASTROLYTT";
