@@ -2,19 +2,24 @@
     margin-left: auto;
     margin-right: auto;
     a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
             width: auto;
         }
-        
     }
 }
-#quiz{
+
+#quiz{ 
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     #headings{
+        width: 90%;
+        margin: 0 auto;
         display: inherit;
         flex-direction: row;
         justify-content: space-between;
@@ -42,6 +47,8 @@
         }
     }
     #questions_content{
+        width: 90%;
+        margin: 0 auto;
         #questions{
             display: flex;
             flex-direction: row;
@@ -155,6 +162,8 @@
         
     }
     #submit{
+        width: 90%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between !important;
         margin-bottom: 5em;
@@ -175,9 +184,9 @@
             }
         }
         #done{
-            width: 25%;
+            width: 40%;
             display: inherit;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             .submit{
                 background: $zodiacpurple;
