@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <h1>Quiz</h1>
+            <h1>Quiz - Auflösung</h1>
 
             <!--    Made by Erik Terwan    -->
             <!--   24th of November 2015   -->
@@ -49,7 +49,7 @@
         
         <section id="quiz">
             <section id="headings">
-                <h2>Teste dein Wissen</h2>
+                <h2>Auflösung</h2>
                 <section id="truefalse">
                     <h2>Wahr</h2>
                     <h2>Falsch</h2>
@@ -58,12 +58,25 @@
             
             <section id="questions_content">
                 <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                    <section id="question" class="correct">
+                        <p>Richtige Antwort!</p>
                     </section>
                     <section id="radios">
                         <label>
                             <input type="radio" class="option-input radio" name="example" checked />
+                        </label>
+                        <label>
+                            <input type="radio" class="option-input radio correct" name="example" />
+                        </label>
+                    </section>
+                </section>
+                <section id="questions">
+                    <section id="question" class="correct">
+                        <p>Richtige Antwort!</p>
+                    </section>
+                    <section id="radios">
+                       <label>
+                            <input type="radio" class="option-input radio correct" name="example" checked />
                         </label>
                         <label>
                             <input type="radio" class="option-input radio" name="example" />
@@ -71,38 +84,25 @@
                     </section>
                 </section>
                 <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                    <section id="question" class="incorrect">
+                        <p>Falsche Antwort!</p>
                     </section>
                     <section id="radios">
                        <label>
                             <input type="radio" class="option-input radio" name="example" checked />
                         </label>
                         <label>
-                            <input type="radio" class="option-input radio" name="example" />
+                            <input type="radio" class="option-input radio incorrect" name="example" />
                         </label>
                     </section>
                 </section>
                 <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
-                    </section>
-                    <section id="radios">
-                       <label>
-                            <input type="radio" class="option-input radio" name="example" checked />
-                        </label>
-                        <label>
-                            <input type="radio" class="option-input radio" name="example" />
-                        </label>
-                    </section>
-                </section>
-                <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                    <section id="question" class="incorrect">
+                        <p>Falsche Antwort!</p>
                     </section>
                     <section id="radios">
                         <label>
-                            <input type="radio" class="option-input radio" name="example" checked />
+                            <input type="radio" class="option-input radio incorrect" name="example" checked />
                         </label>
                         <label>
                             <input type="radio" class="option-input radio" name="example" />
@@ -110,12 +110,12 @@
                     </section>
                 </section>
                 <section id="questions">
-                    <section id="question">
-                        <p>Hallo ich bin eine Frage!</p>
+                    <section id="question" class="correct">
+                        <p>Richtige Antwort!</p>
                     </section>
                     <section id="radios">
                         <label>
-                            <input type="radio" class="option-input radio" name="example" checked />
+                            <input type="radio" class="option-input radio correct" name="example" checked />
                         </label>
                         <label>
                             <input type="radio" class="option-input radio" name="example" />
@@ -125,9 +125,12 @@
                 
             </section>
             
-            <section id="submit">
+            <section id="sol">
+                <section id="score">
+                    Score: <p>3/5</p>
+                </section>
                 <section id="done">
-                    <button onclick="window.location.href='/solution.html'"class="submit">Fertig</button>
+                    <button onclick="window.location.href='/quiz.html'"class="submit">Erneut versuchen</button>
                 </section>
             </section>   
         </section>
