@@ -3,9 +3,26 @@
     <head>
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <title>dasuniversum</title>
     </head>
     <body>
+        <script>
+            
+            var data;
+            
+            $.getJSON("planets.json", function JSONdata(json) {
+                data = json; 
+                console.log(data[0].name);
+                document.getElementById('planetname').innerHTML=data[0].name;
+                
+                document.getElementById('fact').innerHTML=data[0].facts;
+            
+            });
+            
+        </script>
+        
         <header>
             <h1>brotkrümeli</h1>
 
@@ -62,7 +79,7 @@
                 <a href="#"><img id="neptune" src="images/planets/neptune.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
             </section>
             <section id="hero">
-                <h1>ein Planet</h1>
+                <h1 id="planetname"></h1>
                 <div id="p_img"></div>
             </section>
             <section id="main_cont">
@@ -70,7 +87,7 @@
                     <h2>Steckbrief</h2>
                     <section id="cont_desc">
                         <ul>
-                            <li>Ein Fakt! FAKT FAKT FAKT Blhas blash
+                            <li id="fact">
                             </li>
                             <li>Ein Fakt!mlsanfjask lnjsn shd skfhaos ksfhjs
                             </li>
