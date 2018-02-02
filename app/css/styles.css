@@ -2747,11 +2747,18 @@ table {
     padding: 1.5em;
     border: 0.05em solid #f6f6f6;
     border-radius: 1.3em; }
+    #info #cont hr {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      width: 80%;
+      border-top: 0.05em solid #333333; }
     #info #cont p {
       color: #333333;
       width: 80%; }
       #info #cont p a {
         color: #333333; }
+        #info #cont p a:hover {
+          color: #78d6f8; }
 
 #content {
   display: flex;
