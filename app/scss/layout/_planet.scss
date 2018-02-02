@@ -77,7 +77,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-end;
-                opacity: 0.85;
                 width: 80%;
                 img {
                     height: 6em;
@@ -86,6 +85,11 @@
                     margin-bottom: 5%;
                     border: 0.035em solid $softblanc;
                     border-radius: 1em;
+                     &:hover{
+                        -moz-transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        transform: scale(3);
+                    }
                 }
             }
         }
