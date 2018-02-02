@@ -1,42 +1,49 @@
 [
     {   "name": "Sonne", 
         "pic": "images\/planets\/sun.png",
-        "facts": [],
+        "facts": [
+            "Die Sonne ist eigentlich gar kein Planet, sondern ein Stern.",
+            "Sie ist schon sehr alt, nämlich 4.6 Milliarden Jahre.",
+            "Die Oberfläche der Sonne ist sehr heiß. Ihre Temperatur beträgt 5500 Grad Celsius.",
+            "Ihr Mittelpunkt ist aber noch viel heißer. Dort hat es um die 15 Millionen Grad.",
+            "Ohne die Energie und Hitze der Sonne, würde es kein Leben auf der Erde geben."
+        ],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/sun1.jpg", 
+            "images\/galery\/sun2.jpg", 
+            "images\/galery\/sun3.jpg"]},
 
 
     {   "name": "Merkur ",
         "pic": "images\/planets\/mercury.png",
         "facts": [  
              "Merkur ist der kleinste Planet in unserem Sonensystem.",
-             "Ein Tag am Merkus braucht 59 Erdtage, da er sich so langsam um seine eigene Achse dreht.",
+             "Ein Tag am Merkur braucht 59 Erdtage, da er sich so langsam um seine eigene Achse dreht.",
              "Nach 88 Tagen ist am Merkur schon ein Jahr vergangen.",
              "Die Menschheit kennt Merkur schon sehr lange. Mit einfachen Hilfsmitteln ist er zu erkennen.",
              "Ein Sonnenaufgang erlebt man am Merkur nur alle 180 Erdtage.",
              "Spaziergänge im Mondlicht gibt es lieder keine, denn Merkur hat keine Monde."],         
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/mercury.jpg", 
+            "images\/galery\/mercury1.jpg", 
+            "images\/galery\/mercury2.jpg", 
+            "images\/galery\/mercury3.jpg", 
+            "images\/galery\/mercury4.jpg"]},
 
 
     {   "name": "Venus", 
         "pic": "images\/planets\/venus.png",
         "facts": [
-                "Die Venus ist heißeste Planet.",
-                "Sie ist kein Ort für feine Nasen. Ihr Wolken bestehen aus Schwefelsäure.",
-                "Venus hat viele Berge und Vukane.",
-                "Venus dreht sich in die entgegengesetzte Richtung der Erde und vieler anderer Planeten in unserem Sonnensystem.",
+                "Die Venus ist der heißeste Planet.",
+                "Sie ist kein Ort für feine Nasen. Ihre Wolken bestehen aus Schwefelsäure.",
+                "Venus hat viele Berge und Vulkane.",
+                "Venus dreht sich in die entgegengesetzte Richtung der Erde und vieler anderer Planeten.",
                 "Die Venus dreht sich sehr langsam. Ein Tag auf der Venus dauert vergleichsweise 243 Tage auf der Erde.",
                 "Wäre Japan auf der Venus wäre es das Land der untergehenden Sonne - sie geht im Westen auf und im Osten unter."
                 ],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/Venus.jpg",
+            "images\/galery\/Venus2.jpg"]},
 
 
     {   "name": "Erde", 
@@ -45,12 +52,11 @@
             "Die Oberfläche der Erde besteht großteils aus Wasser (70%).", 
             "Die Erde wird von der Atmosphäre umhüllt. Sie ist wie ein Mantel aus Gasen. Sie gibt uns Sauerstoff zum Atmen und beeinflusst unser Wetter.",
             "Die Erde ist der einzige Planet in unserem Sonnensystem, wo sich Leben entwickeln kann.",
-            "Ein Jahr hat 365 Tage. So lange braucht die Erde, um die Sonne ein Mal zu umkreisen.",
-            "Siehe unser super freshes Sonnensystem, es ist lit vong der nicigkeit her."],
+            "Ein Jahr hat 365 Tage. So lange braucht die Erde, um die Sonne ein Mal zu umkreisen."],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/earth1.jpg", 
+            "images\/galery\/earth2.jpg", 
+            "images\/galery\/earth3.jpg"]},
 
     {   "name": "Mars", 
         "pic": "images\/planets\/mars.png",
@@ -58,66 +64,82 @@
             "Der Mars ist wie eine kalte Wüste.",
             "Wir nennen ihn auch den roten Planet, da er rostiges Eisen auf seiner Oberfläche besitzt.",
             "Mars kommt den Bedingungen der Erde am nächsten. Es gibt Jahreszeiten, Wetter und Polarkappen.",
-            "Auf dem Mars gabes vor millionen von Jahren einmal Wasser. Wissenschaftler interessieren sich dafür, ob es auf dem Mars einmal Leben gab oder in Zukunft geben könnte.",
+            "Auf dem Mars gab es vor Millionen von Jahren einmal Wasser. Wissenschaftler interessieren sich dafür, ob es auf dem Mars einmal Leben gab oder in Zukunft geben könnte.",
             "Er besitzt zwei Monde."],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/mars1.jpg", 
+            "images\/galery\/mars2.jpg", 
+            "images\/galery\/mars3.jpg"]},
 
 
     {   "name": "Jupiter", 
         "pic": "images\/planets\/jupiter.png",
         "facts": [
             "Jupiter ist der größte Planet im Sonnensystem.",
-            "Er ist beinahe ein Stern, wie die Sonne, aber er wurde nie groß um zum Brennen anzufangen.",
-            "Jupiter ist ein Gaßplanet. Die ganze Zeit herrschen hier starke Stürme. Einige von Ihnen dauern mehrere hundert Jahre an.",
-            "Jupiter hat 50 bestätigte und 17 unbestätigte Monde. Über diese Monde wird derzeitgeforscht ob es sich wirklich um Monde handelt.",
+            "Er ist beinahe ein Stern, wie die Sonne, aber er wurde nie groß, um zum Brennen anzufangen.",
+            "Jupiter ist ein Gasplanet. Die ganze Zeit herrschen hier starke Stürme. Einige von ihnen dauern mehrere Hundert Jahre an.",
+            "Jupiter hat 50 bestätigte und 17 unbestätigte Monde. Über diese Monde wird derzeit geforscht, ob es sich wirklich um Monde handelt.",
             "Er besitzt Planetenringe, aber die sieht man kaum."],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/jupiter1.jpg", 
+            "images\/galery\/jupiter2.jpg", 
+            "images\/galery\/jupiter3.jpg"]},
 
 
     {   "name": "Saturn", 
         "pic": "images\/planets\/saturn.png",
         "facts": [
-            "Saturn ist bekannt für seine Planetenringe. Die großen Ringe setzten sich aus vielen kleinen Ringelchen zusammen. Diese bestehen aus Eisbrocken und Gestein.",
+            "Saturn ist bekannt für seine Planetenringe. Die großen Ringe setzen sich aus vielen kleinen Ringelchen zusammen. Diese bestehen aus Eisbrocken und Gestein.",
             "Er besitzt sieben große Hauptringe.",
-            "Wie Jupiter ist Saturn ein Gasplanet hauptsächlich aus Wasserstoff und Helium.",
-            "Als galileo Galleiim 16. Jahrhundert mit einem Teleskop den Saturn erblickte war es sich nicht sicher. Er wusste nicht ob es sich um drei Planeten oder um einen Planeten mit Griffen handelte."],
+            "Wie Jupiter, ist Saturn ein Gasplanet. Hauptsächlich besteht er aus Wasserstoff und Helium.",
+            "Als Galileo Galilei im 16. Jahrhundert mit einem Teleskop den Saturn erblickte, war es sich nicht sicher. Er wusste nicht ob es sich um drei Planeten oder um einen Planeten mit Griffen handelte."],
                 
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/saturn1.jpg", 
+            "images\/galery\/saturn2.jpg", 
+            "images\/galery\/saturn3.jpg", 
+            "images\/galery\/saturn4.jpg"]},
 
 
     {   "name": "Uranus", 
         "pic": "images\/planets\/uranus.png",
         "facts": [
-            "Uranus dreht sich, gleich wie Venus, in die entgegegesetzte Richtung. Aber wie kein anderer Planet rotiert er sich zu seiner Seite.",
+            "Uranus dreht sich, gleich wie Venus, in die entgegengesetzte Richtung. Aber wie kein anderer Planet, dreht er sich seitlich.",
             "Auch er hat schwache Ringe.",
             "Er ist ein sogennanter Eisgigant. Er besteht hauptsächlich aus fließenden eiskalten Materialien und besitzt einen festen Kern.",
             "Er hat eine dicke Atmospäre aus Methan, Wasserstoff und Helium.",
-            "Wer auf Uranus auf seinen Geburtstag wartet, hat Pech. Ein Jahr dauert 86 Erdjahre."],
+            "Wer auf Uranus auf seinen Geburtstag wartet, muss lange warten. Ein Jahr dauert 86 Erdjahre."],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]},
+            "images\/galery\/uranus1.jpg", 
+            "images\/galery\/uranus2.jpg"]},
 
 
     {   "name": "Neptun", 
         "pic": "images\/planets\/neptune.png",
         "facts": [
-            "Warm anziehen! Auf Neptun ist es dark, kalt und sehr windig. Er liegt am Rande des Sonnensystem und bekommt somit am wenigsten Wärme von der Sonne. Er ist der kälteste Planet unseres Sonnensystems.",
+            "Warm anziehen! Auf Neptun ist es dunkel, kalt und sehr windig. Er liegt am Rande des Sonnensystems und bekommt somit am wenigsten Wärme von der Sonne. Er ist der kälteste Planet unseres Sonnensystems.",
             "Er zählt zu den Gasplaneten.",
             "Neptun hat sechs Ringe.",
-            "Für Neujahrsvorsätze hat man lange Zeit. Er braucht 164 Erdjahre bis er ein mal um die Sonne gewandert ist."
+            "Für Neujahrsvorsätze hat man lange Zeit. Er braucht 164 Erdjahre bis er ein Mal um die Sonne gewandert ist."
             ],
         "images": [
-            "images\/planets\/sun.png", 
-            "images\/planets\/mercury.png", 
-            "images\/planets\/jupiter.png"]}
+            "images\/galery\/neptune1.jpg", 
+            "images\/galery\/neptune2.jpg", 
+            "images\/galery\/neptune3.jpg"]},
+
+
+    {   "name": "Pluto", 
+        "pic": "images\/planets\/pluto.png",
+        "facts": [
+            "Pluto ist kein Planet, sondern ein Zwergplanet.",
+            "Er ist nicht mehr Teil des Sonnensystems, weil er dafür zu klein ist.",
+            "Er ist noch kleiner als unser Mond. Daher entspricht er nicht mehr der Definition eines Planeten.",
+            "Pluto besteht zu einem Drittel aus Wasser. Allerdings nicht normales Wasser, wie bei uns, sondern in Form von Wassereis.",
+            "Aufgrund dieser Form des Wassers, gibt es auf Pluto drei Mal mehr Wasser als in allen Ozeanen der Erde. ",
+            "Pluto wurde bis jetzt von einem Raumfahrzeug, der 'New Horizons', besucht."
+            ],
+        "images": [
+            "images\/galery\/pluto1.jpg", 
+            "images\/galery\/pluto2.jpg", 
+            "images\/galery\/pluto3.jpg"]}           
 ]
