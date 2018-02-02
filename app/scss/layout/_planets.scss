@@ -31,8 +31,9 @@
                     width: 7em;
                     height: 7em;   
                 &:hover{
-                    width: 8em;
-                    height: 8em;
+                    border-radius: 50%;
+                    box-shadow: 0 0 6em $softblanc;
+                    background-color: rgba($softblanc, 0.4);
                 }
             }
             h2{
@@ -53,12 +54,13 @@
                 width: 10em;
                 height: 7em;
                 &:hover{
-                    width: 11em;
-                    height: 8em;
+                    border-top-left-radius: 10%;
+                    border-top-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                    border-bottom-right-radius: 10%;
+                    box-shadow: 0 0 6em $softblanc;
+                    background-color: rgba($softblanc, 0.4);
                 }
-            }
-            h2{
-                text-align: center;
             }
         }
         .sonne{
@@ -67,9 +69,17 @@
             img{
                 width: 8em;
                 height: 8em;
+            }
+        }
+        .uranus{
+            img{
                 &:hover{
-                    width: 9em;
-                    height: 9em;
+                    border-top-left-radius: 50%;
+                    border-top-right-radius: 20%;
+                    border-bottom-left-radius: 20%;
+                    border-bottom-right-radius: 50%;
+                    box-shadow: 0 0 4em $softblanc;
+                    background-color: rgba($softblanc, 0.4);
                 }
             }
         }
