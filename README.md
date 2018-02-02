@@ -6,7 +6,7 @@
 
 ## Installation
 
-The project was developed with gulp. If you don't have gulp, here is a documentation for installing it. 
+The project was developed with gulp. If you don't have gulp, here is a [documentation] (https://www.npmjs.com/package/gulp) for installing it. 
 
 After installation of gulp, clone the project, navigate to the right folder and run
 
@@ -22,4 +22,4 @@ in the console. This will open the project on your localhost (in a browser tab).
 
 ## License
 
-MIT
+[MIT License] (http://en.wikipedia.org/wiki/MIT_License)
