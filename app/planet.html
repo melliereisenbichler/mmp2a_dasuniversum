@@ -5,7 +5,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <title>dasuniversum</title>
+        <title id="title"></title>
+        <style>
+            #planetrow a .tooltiptext{
+                top: 130% !important;
+            }
+        </style>
     </head>
     <body>
         <script>
@@ -31,10 +36,14 @@
             
             $.getJSON("planets.json", function JSONdata(json) {
                 data = json; 
-                console.log(data[0].name);
+                //console.log(data[0].name);                
                 var index = GetURLParameter('planet');
                 document.getElementById('planetname').innerHTML=data[index].name; 
                 document.getElementById('planetname').innerHTML=data[index].name;
+                
+                //change title on browsertab
+                document.getElementById('title').innerHTML = data[index].name; 
+                
                 var facts = data[index].facts; 
                 var images = data[index].images;
                 var path = data[index].pic;

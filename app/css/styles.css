@@ -2754,13 +2754,7 @@ table {
       margin-bottom: 0.5em; }
     #content #hero #p_img {
       width: 5em;
-<<<<<<< HEAD
-      height: 5em;
-      background-image: url("../../images/planets/earth.png");
-      background-size: cover; }
-=======
       height: auto; }
->>>>>>> 8593adf3d3081918f02365250b6b2393850ba583
   #content #main_cont {
     display: flex;
     flex-direction: row;
@@ -2783,15 +2777,6 @@ table {
         opacity: 0.85;
         width: 80%;
         border: 1px solid #f6f6f6;
-<<<<<<< HEAD
-        border-radius: 0.752em; }
-        #content #main_cont #desc #cont_desc ul {
-          color: #333333;
-          line-height: 2em; }
-          #content #main_cont #desc #cont_desc ul li:before {
-            content: "\2605";
-            margin: 0 1em; }
-=======
         border-radius: 0.752em;
         display: flex;
         justify-content: center; }
@@ -2803,7 +2788,6 @@ table {
             content: "\2605";
             margin: 0 0.5em;
             margin-left: -1.5em !important; }
->>>>>>> 8593adf3d3081918f02365250b6b2393850ba583
     #content #main_cont #galery {
       display: flex;
       flex-direction: column;
@@ -3238,3 +3222,6 @@ body {
       transform: scale(3); }
   body #sternbild_cont h2 {
     margin: 1em 0 !important; }
+    body #sternbild_cont h2:hover {
+      color: #f6f6f6 !important;
+      font-style: normal !important; }
