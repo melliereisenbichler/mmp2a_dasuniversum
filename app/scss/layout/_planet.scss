@@ -83,8 +83,9 @@
                     width: 6em;
                     margin-left: 5%;
                     margin-bottom: 5%;
-                    border: 0.035em solid $softblanc;
+                    border: 0.06em solid $softblanc;
                     border-radius: 1em;
+                    object-fit: cover;
                      &:hover{
                         -moz-transform: scale(1.1);
                         -webkit-transform: scale(1.1);
