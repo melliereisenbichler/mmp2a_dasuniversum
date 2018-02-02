@@ -1891,71 +1891,30 @@ table {
 
 .scale-stretched #mercury .planet {
   font-size: 1.5em; }
-  .scale-stretched #mercury .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #mercury .planet #tooltiptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: black transparent transparent transparent; }
-    .scale-stretched #mercury .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #venus .planet {
   font-size: 3.72em; }
-  .scale-stretched #venus .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #venus .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #earth .planet {
   font-size: 3.92em; }
-  .scale-stretched #earth .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #earth .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #earth .moon {
   font-size: 1.2em; }
 
 .scale-stretched #mars .planet {
   font-size: 2.9em; }
-  .scale-stretched #mars .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #mars .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #jupiter .planet {
   font-size: 12em; }
-  .scale-stretched #jupiter .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #jupiter .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #saturn .planet {
   font-size: 10.8em; }
-  .scale-stretched #saturn .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #saturn .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #uranus .planet {
   font-size: 4.68em; }
-  .scale-stretched #uranus .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #uranus .planet #tooltiptext:hover {
-      opacity: 1; }
 
 .scale-stretched #neptune .planet {
   font-size: 4.9em; }
-  .scale-stretched #neptune .planet #tooltiptext {
-    opacity: 0; }
-    .scale-stretched #neptune .planet #tooltiptext:hover {
-      opacity: 1; }
 
 /* --------------------------------------------------------------------------- scaled sizes */
 /*
@@ -2046,8 +2005,8 @@ table {
 .scale-stretched #earth .orbit {
   width: 6em;
   height: 6em;
-  margin-top: -3em;
-  margin-left: -3em; }
+  margin-top: -4em;
+  margin-left: -4em; }
 
 .scale-stretched #mars.orbit {
   width: 72em;
@@ -2499,7 +2458,6 @@ table {
   transition-delay: 1s; }
   .pos a {
     position: relative;
-    display: inline-block;
     border-bottom: 1px dotted black; }
   .pos a .tooltiptext {
     visibility: hidden;
