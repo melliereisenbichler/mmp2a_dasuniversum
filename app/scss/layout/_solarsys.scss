@@ -741,6 +741,9 @@ table {
   .planet {
     animation-name: shadow-mercury;
   }
+    a .tooltiptext {
+        font-size: 1.5em !important;
+    }
 }
 
 @keyframes shadow-mercury {
@@ -791,6 +794,9 @@ table {
   .planet {
     animation-name: shadow-venus;
   }
+    a .tooltiptext {
+        font-size: 0.7em !important;
+    }
 }
 
 @keyframes shadow-venus {
@@ -841,6 +847,9 @@ table {
   .planet {
     animation-name: shadow-earth;
   }
+    a .tooltiptext {
+        font-size: 0.7em !important;
+    }
 }
 
 @keyframes shadow-earth {
@@ -898,6 +907,9 @@ table {
   .planet {
     animation-name: shadow-mars;
   }
+    a .tooltiptext {
+        font-size: 0.8em !important;
+    }
 }
 
 @keyframes shadow-mars {
@@ -948,6 +960,9 @@ table {
   .planet {
     animation-name: shadow-jupiter;
   }
+    a .tooltiptext {
+        font-size: 0.3em !important;
+    }
 }
 
 @keyframes shadow-jupiter {
@@ -998,6 +1013,9 @@ table {
   .planet {
     animation-name: shadow-saturn;
   }
+    a .tooltiptext {
+        font-size: 0.3em !important;
+    }
 }
 
 @keyframes shadow-saturn {
@@ -1048,6 +1066,9 @@ table {
   .planet {
     animation-name: shadow-uranus;
   }
+    a .tooltiptext {
+        font-size: 0.5em !important;
+    }
 }
 
 @keyframes shadow-uranus {
@@ -1098,6 +1119,9 @@ table {
   .planet {
     animation-name: shadow-neptune;
   }
+    a .tooltiptext {
+        font-size: 0.5em !important;
+    }
 }
 
 @keyframes shadow-neptune {
@@ -1163,6 +1187,42 @@ table {
 
 .pos {
   transition-delay: 1s;
+    a {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    a .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $softblanc2;
+        color: $noir;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    a .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent $softblanc2 transparent;
+    }
+
+    a:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 #opening {
