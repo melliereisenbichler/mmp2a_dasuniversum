@@ -11,7 +11,10 @@
         "images": [
             "images\/galery\/sun1.jpg", 
             "images\/galery\/sun2.jpg", 
-            "images\/galery\/sun3.jpg"]},
+            "images\/galery\/sun3.jpg",
+            "images\/galery\/sun4.jpg",
+            "images\/galery\/sun5.jpg",
+            "images\/galery\/sun6.jpg"]},
 
 
     {   "name": "Merkur ",
@@ -24,11 +27,12 @@
              "Ein Sonnenaufgang erlebt man am Merkur nur alle 180 Erdtage.",
              "Spaziergänge im Mondlicht gibt es lieder keine, denn Merkur hat keine Monde."],         
         "images": [
-            "images\/galery\/mercury.jpg", 
             "images\/galery\/mercury1.jpg", 
             "images\/galery\/mercury2.jpg", 
             "images\/galery\/mercury3.jpg", 
-            "images\/galery\/mercury4.jpg"]},
+            "images\/galery\/mercury4.jpg", 
+            "images\/galery\/mercury5.jpg",
+            "images\/galery\/mercury6.jpg"]},
 
 
     {   "name": "Venus", 
@@ -42,8 +46,12 @@
                 "Wäre Japan auf der Venus wäre es das Land der untergehenden Sonne - sie geht im Westen auf und im Osten unter."
                 ],
         "images": [
-            "images\/galery\/Venus.jpg",
-            "images\/galery\/Venus2.jpg"]},
+            "images\/galery\/venus1.jpg",
+            "images\/galery\/venus2.jpg",
+            "images\/galery\/venus3.jpg",
+            "images\/galery\/venus4.jpg",
+            "images\/galery\/venus5.jpg",
+            "images\/galery\/venus6.jpg"]},
 
 
     {   "name": "Erde", 
@@ -56,7 +64,10 @@
         "images": [
             "images\/galery\/earth1.jpg", 
             "images\/galery\/earth2.jpg", 
-            "images\/galery\/earth3.jpg"]},
+            "images\/galery\/earth3.jpg",
+            "images\/galery\/earth4.jpg", 
+            "images\/galery\/earth5.jpg", 
+            "images\/galery\/earth6.jpg"]},
 
     {   "name": "Mars", 
         "pic": "images\/planets\/mars.png",
@@ -69,7 +80,10 @@
         "images": [
             "images\/galery\/mars1.jpg", 
             "images\/galery\/mars2.jpg", 
-            "images\/galery\/mars3.jpg"]},
+            "images\/galery\/mars3.jpg",
+            "images\/galery\/mars4.jpg", 
+            "images\/galery\/mars5.jpg", 
+            "images\/galery\/mars6.jpg"]},
 
 
     {   "name": "Jupiter", 
@@ -83,7 +97,10 @@
         "images": [
             "images\/galery\/jupiter1.jpg", 
             "images\/galery\/jupiter2.jpg", 
-            "images\/galery\/jupiter3.jpg"]},
+            "images\/galery\/jupiter3.jpg",
+            "images\/galery\/jupiter4.jpg",
+            "images\/galery\/jupiter5.jpg",
+            "images\/galery\/jupiter6.jpg"]},
 
 
     {   "name": "Saturn", 
@@ -98,7 +115,9 @@
             "images\/galery\/saturn1.jpg", 
             "images\/galery\/saturn2.jpg", 
             "images\/galery\/saturn3.jpg", 
-            "images\/galery\/saturn4.jpg"]},
+            "images\/galery\/saturn4.jpg",
+            "images\/galery\/saturn5.jpg",
+            "images\/galery\/saturn6.jpg"]},
 
 
     {   "name": "Uranus", 
@@ -111,7 +130,11 @@
             "Wer auf Uranus auf seinen Geburtstag wartet, muss lange warten. Ein Jahr dauert 86 Erdjahre."],
         "images": [
             "images\/galery\/uranus1.jpg", 
-            "images\/galery\/uranus2.jpg"]},
+            "images\/galery\/uranus2.jpg",
+            "images\/galery\/uranus3.jpg",
+            "images\/galery\/uranus4.jpg",
+            "images\/galery\/uranus5.jpg",
+            "images\/galery\/uranus6.jpg"]},
 
 
     {   "name": "Neptun", 
@@ -125,7 +148,10 @@
         "images": [
             "images\/galery\/neptune1.jpg", 
             "images\/galery\/neptune2.jpg", 
-            "images\/galery\/neptune3.jpg"]},
+            "images\/galery\/neptune3.jpg",
+            "images\/galery\/neptune4.jpg",
+            "images\/galery\/neptune5.jpg",
+            "images\/galery\/neptune6.jpg"]},
 
 
     {   "name": "Pluto", 
@@ -141,5 +167,8 @@
         "images": [
             "images\/galery\/pluto1.jpg", 
             "images\/galery\/pluto2.jpg", 
-            "images\/galery\/pluto3.jpg"]}           
+            "images\/galery\/pluto3.jpg",
+            "images\/galery\/pluto4.jpg",
+            "images\/galery\/pluto5.jpg",
+            "images\/galery\/pluto6.jpg"]}           
 ]
