@@ -11,11 +11,20 @@
     #cont{
         flex-direction: column;
         justify-content: center;
+        hr{
+            margin-top: 4%;
+            margin-bottom: 4%;
+            width: 80%;
+            border-top: 0.05em solid $noir;
+        }
         p{
             color: $noir;
             width: 80%;
             a {
                 color: $noir;
+                &:hover {
+                    color: $cosmicblue;
+                }
             }
         }
         background: $softblanc;
