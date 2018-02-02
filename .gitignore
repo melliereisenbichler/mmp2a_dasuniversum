@@ -14,7 +14,3 @@ node_modules/
 # build
 dist/
 build/
-
-
-# style
-app/css/styles.css
