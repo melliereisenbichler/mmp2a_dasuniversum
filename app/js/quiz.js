@@ -1,7 +1,7 @@
 function solution(){ 
     //calculate correct score
     var correctAnswers = 0;          
-    for(var i = 1; i <= 5; i++) {
+    for(var i = 1; i <= 10; i++) {
         var question =  document.getElementById('q'+i);
         var radios = document.getElementsByName('group'+i);
         for(var j = 0; j < radios.length; j++) {
@@ -24,13 +24,13 @@ function solution(){
     console.log("Correct Responses: " + correctAnswers);
     //add correct store to that paragraph
     var p = document.getElementById("addstuff");
-    var score = correctAnswers + "/5";
+    var score = correctAnswers + "/10";
     p.innerHTML += score;
     //make score-section visible
     document.getElementById("score").style.visibility = "visible";
 
     document.getElementById("head").innerHTML = "Auflösung";
-
+    document.getElementById("title").innerHTML = "Auflösung";
 }
 
 function hide_button(){
