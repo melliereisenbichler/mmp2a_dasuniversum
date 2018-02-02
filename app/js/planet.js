@@ -22,6 +22,9 @@ function GetURLParameter(sParam)
                 data = json; 
                 //console.log(data[0].name);                
                 var index = GetURLParameter('planet');
+                if(index > 9 || index < 0) {
+                    index = 3;
+                }
                 document.getElementById('planetname').innerHTML=data[index].name; 
                 document.getElementById('planetname').innerHTML=data[index].name;
                 
