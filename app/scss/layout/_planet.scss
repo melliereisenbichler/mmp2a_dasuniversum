@@ -14,9 +14,7 @@
         }
         #p_img {
             width: 5em;
-            height: 5em;
-            background-image: url('../../images/planets/earth.png');
-            background-size: cover;
+            height: auto;
         }
     }
     
@@ -44,12 +42,19 @@
                 width: 80%;
                 border: 1px solid $softblanc;
                 border-radius: 0.752em;
+                display: flex;
+                justify-content: center;
                 ul {
                     color: $noir;
                     line-height: 2em;
+                    max-width: 95%;
+  
                     li:before {
                         content: "\2605";
-                        margin: 0 1em;
+                        margin: 0 0.5em;
+                       
+                        margin-left: -1.5em !important;
+                        
                     }
                 }
             }
