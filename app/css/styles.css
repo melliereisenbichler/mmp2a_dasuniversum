@@ -3222,3 +3222,6 @@ body {
       transform: scale(3); }
   body #sternbild_cont h2 {
     margin: 1em 0 !important; }
+    body #sternbild_cont h2:hover {
+      color: #f6f6f6 !important;
+      font-style: normal !important; }
