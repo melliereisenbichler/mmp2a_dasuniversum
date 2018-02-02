@@ -26,15 +26,52 @@
             
             var data;
             
+            /*--------------------------------*/
+                /*Generate Content*/
+            
             $.getJSON("planets.json", function JSONdata(json) {
                 data = json; 
                 console.log(data[0].name);
                 var index = GetURLParameter('planet');
                 document.getElementById('planetname').innerHTML=data[index].name; 
-                var facts = data[index].facts;
+                document.getElementById('planetname').innerHTML=data[index].name;
+                var facts = data[index].facts; 
+                var images = data[index].images;
+                var path = data[index].pic;
                 
-                console.log(facts);
+                    
+                    
+                /*--------------------------------*/
+                /*Planet Picture*/
+                
+                var pic = '<li><img id="p_img" src= "' + path + '"></li>';
+                $('#p_image').append(pic);
 
+                
+                
+                /*--------------------------------*/
+                /*Generate Facts*/
+                var x = document.createElement("UL");
+                x.setAttribute("id", "myUL");
+                $('#cont_desc').prepend(x);
+                document.getElementById("myUL");    
+                
+                for(var i = 0; i < facts.length; i++){
+                    var y = document.createElement("LI");
+                    var t = document.createTextNode(facts[i]);
+                    y.appendChild(t);
+                    document.getElementById("myUL").appendChild(y);
+                }
+                
+                
+                /*--------------------------------*/
+                /*Generate Images*/
+                for(var i = 0; i < images.length; i++){
+                    var path = images[i];
+                    var img = '<img src= "' + path + '">';
+                    $('#imgs').prepend(img);
+                }
+ 
             });
             
         </script>
@@ -84,19 +121,21 @@
         </header>
         <section id="content">
             <section id="planetrow">
-                <a href="#"><img id="sonne" src="images/planets/sun.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="mercury" src="images/planets/mercury.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="venus" src="images/planets/venus.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="earth" src="images/planets/earth.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="mars" src="images/planets/mars.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="jupiter" src="images/planets/jupiter.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="saturn" src="images/planets/saturn.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="uranus" src="images/planets/uranus.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
-                <a href="#"><img id="neptune" src="images/planets/neptune.png" alt="Hier müsste ein Bild von der Sonne sein"></a>
+                <a href="/planet.html?planet=0"><img id="sonne" src="images/planets/sun.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Sonne</span></a>
+                <a href="/planet.html?planet=1"><img id="mercury" src="images/planets/mercury.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Merkur</span></a>
+                <a href="/planet.html?planet=2"><img id="venus" src="images/planets/venus.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Venus</span></a>
+                <a href="/planet.html?planet=3"><img id="earth" src="images/planets/earth.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Erde</span></a>
+                <a href="/planet.html?planet=4"><img id="mars" src="images/planets/mars.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Mars</span></a>
+                <a href="/planet.html?planet=5"><img id="jupiter" src="images/planets/jupiter.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Jupiter</span></a>
+                <a href="/planet.html?planet=6"><img id="saturn" src="images/planets/saturn.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Saturn</span></a>
+                <a href="/planet.html?planet=7"><img id="uranus" src="images/planets/uranus.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Uranus</span></a>
+                <a href="/planet.html?planet=8"><img id="neptune" src="images/planets/neptune.png" alt="Hier müsste ein Bild von der Sonne sein"><span class="tooltiptext">Neptun</span></a>
             </section>
             <section id="hero">
                 <h2 id="planetname"></h2>
-                <div id="p_img"></div>
+                <div id="p_image">
+                   
+                </div> 
             </section>
             <section id="main_cont">
                 <section id="desc">
@@ -108,12 +147,6 @@
                 <section id="galery">
                     <h2>Galerie</h2>
                     <section id="imgs">
-                        <img src="images/planeten/erde.png">
-                        <img src="images/planeten/erde.png">
-                        <img src="images/planeten/erde.png">
-                        <img src="images/planeten/erde.png">
-                        <img src="images/planeten/erde.png">
-                        <img src="images/planeten/erde.png">
                     </section>
                 </section>
             </section>
