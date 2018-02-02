@@ -2777,13 +2777,17 @@ table {
         opacity: 0.85;
         width: 80%;
         border: 1px solid #f6f6f6;
-        border-radius: 0.752em; }
+        border-radius: 0.752em;
+        display: flex;
+        justify-content: center; }
         #content #main_cont #desc #cont_desc ul {
           color: #333333;
-          line-height: 2em; }
+          line-height: 2em;
+          max-width: 95%; }
           #content #main_cont #desc #cont_desc ul li:before {
             content: "\2605";
-            margin: 0 1em; }
+            margin: 0 0.5em;
+            margin-left: -1.5em !important; }
     #content #main_cont #galery {
       display: flex;
       flex-direction: column;
