@@ -6,7 +6,7 @@
 
 ## Installation
 
-The project was developed with gulp. If you don't have gulp, here is a [documentation](https://www.npmjs.com/package/gulp) for installing it. 
+The project was developed with gulp. If you don't have gulp, here is the npm [documentation](https://www.npmjs.com/package/gulp) about gulp and how to install it. 
 
 After installation of gulp, clone the project, navigate to the right folder and run
 
